@@ -1,0 +1,9253 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Description EN">
+      
+      
+      
+        <link rel="canonical" href="https://tgd-hw.github.io/tgmanGH/en/Manual/CZ/TGM/TGMotion/md/PLC.html">
+      
+      
+        <link rel="prev" href="../../../SW/CAN/md/settings.html">
+      
+      
+        <link rel="next" href="HW.html">
+      
+      
+      <link rel="icon" href="../../../../../../Manual/source/img/TGsymbol.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>PLC - English</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#MotionPLC" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://www.tgdrives.cz/" title="English" class="md-header__button md-logo" aria-label="English" data-md-component="logo">
+      
+  <img src="../../../../../../Manual/source/img/TGlogoFullWhite.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            English
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PLC
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../../../Manual/CZ/TGM/TGMotion/md/PLC.html" hreflang="cs" class="md-select__link">
+              Česky
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="PLC.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../index.html" class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../TGZ/TGZ-D-48-13_26/md/mark.html" class="md-tabs__link">
+          
+  
+  TGZ
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../TGS/TGS-320-10_15/md/mark.html" class="md-tabs__link">
+          
+  
+  TGS
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../TGMmini/md/basic.html" class="md-tabs__link">
+          
+  
+  TGM
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../SW/ECAT/md/intro.html" class="md-tabs__link">
+          
+  
+  SW/FW
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../ETC/TGHall/md/description.html" class="md-tabs__link">
+          
+  
+  Etc.
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../source/md/cert.html" class="md-tabs__link">
+        
+  
+    
+  
+  Certificates
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://www.tgdrives.cz/" title="English" class="md-nav__button md-logo" aria-label="English" data-md-component="logo">
+      
+  <img src="../../../../../../Manual/source/img/TGlogoFullWhite.svg" alt="logo">
+
+    </a>
+    English
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-48-13/26
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-48-13/26
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-48-50/100
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-48-50/100
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-50/100
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-50/100
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/250
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/250
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/250-O
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/250-O
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/300
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/300
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/300-O
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/300-O
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/425
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/425
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/425-O
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/425-O
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-230-5/15
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-230-5/15
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-320-5/10
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_11">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-320-5/10
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_12" id="__nav_2_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-320-5/15
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_12">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-320-5/15
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-400-3/9
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-400-3/9
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_14" id="__nav_2_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-400-7/15
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_14">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-400-7/15
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_15" id="__nav_2_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-400-10/20
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_15">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-400-10/20
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_16" id="__nav_2_16_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-400-14/30
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_16">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-400-14/30
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_17" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_17" id="__nav_2_17_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-560-3/9
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_17">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-560-3/9
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_18" id="__nav_2_18_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-560-7/15
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_18">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-560-7/15
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_19" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_19" id="__nav_2_19_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-560-10/20
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_19_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_19">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-560-10/20
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_20" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_20" id="__nav_2_20_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-560-30/50
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_20_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_20">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-560-30/50
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_21" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_21" id="__nav_2_21_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-50/100 RI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_21_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_21">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-50/100 RI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_22" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_22" id="__nav_2_22_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/250 RI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_22_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_22">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/250 RI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_23" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_23" id="__nav_2_23_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/300 RI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_23_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_23">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/300 RI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_24" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_24" id="__nav_2_24_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Common hardware
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_24_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_24">
+            <span class="md-nav__icon md-icon"></span>
+            Common hardware
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/LED/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Status and errors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_DI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Digital inputs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_DO.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Digital outputs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_AI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analog inputs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_CAN.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAN bus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_FBE.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FBE feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_FB12.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FB1, FB2 feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/SD/md/SD.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SD cards
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_25" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_25" id="__nav_2_25_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Control system
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_25_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_25">
+            <span class="md-nav__icon md-icon"></span>
+            Control system
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/REG/md/TGZstructure.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regulation structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/REG/md/MotorSettings.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameter settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/REG/md/PG.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Profile generator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/REG/md/AuxFunc.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Other functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/REG/md/ESTOP.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Emergency braking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_26" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_26" id="__nav_2_26_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ GUI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_26_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_26">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ GUI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/connection.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TGZ connection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/parameters.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameter settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/osc.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oscilloscope
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/FW.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware upload
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/userProg.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User program
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGS
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            TGS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGS-320-10/15
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            TGS-320-10/15
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGS-560-25/50
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            TGS-560-25/50
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGS-560-50/100
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            TGS-560-50/100
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGM
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            TGM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGMmini
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            TGMmini
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGMmini/md/basic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGMmini/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGMmini/md/connectors.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connector description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGMmini/md/linux.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGMmini/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGMmini/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGMmini/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGMcontroller
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            TGMcontroller
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGMcontroller/md/basic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGMcontroller/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGMcontroller/md/connectors.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connector description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGMcontroller/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGMcontroller/md/software.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ+Motion
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ+Motion
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGZpMotion/md/basic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGZpMotion/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGZpMotion/md/connectors.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connector description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGZpMotion/md/TGZ.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TGZ servoamplifier
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TGZpMotion/md/software.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    SW/FW
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            SW/FW
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    EtherCAT
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            EtherCAT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/ECAT/md/intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/ECAT/md/packet.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comunication description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/ECAT/md/network.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Network settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/ECAT/md/EtherCAT.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EtherCAT bus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/ECAT/md/objects.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Object library
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/ECAT/md/twinCAT.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TwinCAT and TGZ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/ECAT/md/codesys.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codesys
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Profinet RT
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Profinet RT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/Profinet/md/intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/Profinet/md/general.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    General
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/Profinet/md/network.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Network settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/Profinet/md/TIA.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TIA portal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/Profinet/md/profidrive.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PROFIdrive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    EtherNET UDP
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            EtherNET UDP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/ENET/md/intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/ENET/md/packet.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comunication description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CAN
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            CAN
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/CAN/md/intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SW/CAN/md/settings.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comunication description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGMotion
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            TGMotion
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PLC
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="PLC.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    PLC
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-plc-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual PLC description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-of-a-plc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Making of a PLC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#required-plc-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required PLC algorithm
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-with-plc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication with PLC
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="HW.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hardware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="interpolator.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interpolator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="osc.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oscilloscope
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Etc.
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Etc.
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ETC/TGHall/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TGHall
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ETC/TGcable/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cable connections
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/cert.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Certificates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="MotionPLC">Virtual PLC<a class="headerlink" href="#MotionPLC" title="Permanent link">&para;</a></h1>
+<h2 id="virtual-plc-description">Virtual PLC description<a class="headerlink" href="#virtual-plc-description" title="Permanent link">&para;</a></h2>
+<p>The Virtual PLC module executes a PLC program written by the user.
+It performs calculations, controls servo drives, reads and sets input and output values and takes care of communication with other peripherals only via shared memory.
+The virtual PLC is periodically called from TG Motion at the interval set in <code>Cycle_Time</code>.
+The <code>Cycle_Time</code> size is defined in the <code>TGMotion4xx.ini</code> file. 
+The advantage of the Virtual PLC is its speed because it runs directly in the CPU machine code.</p>
+<div class="admonition info">
+<p class="admonition-title">Warning</p>
+<p>The Servo and I/O groups unify the control interface for different types of servo drives and I/O units.
+The same PLC code can be applied to different servo drives or I/O units.
+Servo drives or I/O units can also be changed operationally without rewriting the PLC code. </p>
+</div>
+<h2 id="making-of-a-plc">Making of a PLC<a class="headerlink" href="#making-of-a-plc" title="Permanent link">&para;</a></h2>
+<p>The PLC program can be created in a general development environment, e.g. Visual Studio, Delphi.
+The programming language can be C, C++ and Pascal.
+In the development environment, you need to create a <code>*.tgm</code> file, which must publish just six functions with names: 
+<code>Program_01, Program_02, Program_03, Program_04, Program_05</code> and <code>Program_Ini</code>.
+The names given are mandatory, including the case of the letters.
+The <code>*.tgm</code> program module must not be linked with any external modules or DLLs, all program functionality (functions, subroutines, ...) must be created by the programmer directly in the module.
+Any Windows API functions must not be called, dynamic memory allocation (<code>malloc</code> function, etc.) is forbidden. </p>
+<div class="admonition info">
+<p class="admonition-title">Warning</p>
+<p>All the following source code examples are for the C/C++ programming language.</p>
+</div>
+<h2 id="required-plc-algorithm">Required PLC algorithm<a class="headerlink" href="#required-plc-algorithm" title="Permanent link">&para;</a></h2>
+<p>The general PLC algorithm requires the following sequence of execution, in the exact order listed:</p>
+<ul>
+<li>
+<p><strong>Reading entries</strong>
+    In the first phase, it is necessary to read the register values of all required inputs.
+    This includes the positions and states of the servo drives as well as the values of the digital and analog inputs (see Servo structure and I/O structure).</p>
+</li>
+<li>
+<p><strong>Value processing and calculations</strong>
+    The next step is to process the read values and calculate new values (desired positions of actuators and values of digital and analogue outputs).</p>
+</li>
+<li>
+<p><strong>Setting Outputs</strong>
+    The last step is to send the desired positions to the actuators and set the digital and analogue values
+    outputs by writing values to the appropriate registers.</p>
+</li>
+</ul>
+<h2 id="communication-with-plc">Communication with PLC<a class="headerlink" href="#communication-with-plc" title="Permanent link">&para;</a></h2>
+<p>Other TG Motion components and user applications running under Windows can communicate with the PLC using the shared memory <code>TGM_Data</code>.
+TG Motion does not interfere with it in any way and does not rewrite its content.
+The structure of this memory and its use is fully in the PLC programmer's control.
+The size of the shared memory <code>TGM_Data</code> is usually 524 288 bytes.
+The actual memory size is contained in the <code>TGM_System.HEADER.Mem_Size_Data</code> register.
+The memory can contain user registers, cam data, etc.
+It is most often used by visualization applications running under Windows.</p>
+<h1 id="functions-plc">Functions PLC<a class="headerlink" href="#functions-plc" title="Permanent link">&para;</a></h1>
+<h2 id="general-description-of-functions">General description of functions<a class="headerlink" href="#general-description-of-functions" title="Permanent link">&para;</a></h2>
+<p>The programming module of the Virtual PLC has 6 functions available.
+These differ in their execution priority and the requirement for their complete execution within one <code>Cycle_Time</code>.
+For correct and error-free operation of the Virtual PLC it is necessary that the required code is placed in the appropriate function (see below):</p>
+<ul>
+<li><strong>Program_Ini( )</strong> - function called only once when starting the PLC.</li>
+<li><strong>Program_01( )</strong> - lowest priority, selectable calling period.</li>
+<li><strong>Program_02( )</strong> - lower priority, selectable calling period.</li>
+<li><strong>Program_03( )</strong> - higher priority, selectable calling period.</li>
+<li><strong>Program_04( )</strong> - highest priority, it is called every Cycle_Time.</li>
+<li><strong>Program_05( )</strong> - highest priority, called synchronously with the interpolator position calculation (multiple times during one Cycle_Time)</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Warning</p>
+<p>All functions must be implemented, some do not need to contain executable code.
+It is always necessary to provide the return value of the function.
+See code example of the <strong>Program_02</strong> function.</p>
+</div>
+<h2 id="plc_data-structure">PLC_DATA structure<a class="headerlink" href="#plc_data-structure" title="Permanent link">&para;</a></h2>
+<p>The structure is used for communication between TG Motion and PLC.
+TG Motion creates 6 instances of the <code>PLC_DATA</code> structure.
+Each of the 6 functions (Program_01 - Program_05, Program_Ini) has just 1 parameter, a pointer to the PLC_DATA structure.
+When a function is called, TG Motion passes it a pointer to the structure instance that belongs to it.
+The PLC_DATA structure contains pointers to shared memories and pointers to TG Motion's internal diagnostic functions.</p>
+<h3 id="definition-of-diagnostic-functions">Definition of diagnostic functions<a class="headerlink" href="#definition-of-diagnostic-functions" title="Permanent link">&para;</a></h3>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#ifdef __cplusplus</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">extern</span><span class="w"> </span><span class="s">&quot;C&quot;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cp">#endif</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">typedef</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">_cdecl</span><span class="w"> </span><span class="nf">RTWPRINTF_STRING</span><span class="p">(</span><span class="n">LPCWSTR</span><span class="w"> </span><span class="n">strText</span><span class="p">);</span><span class="w"> </span><span class="c1">// dump the string to the console</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">typedef</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">_cdecl</span><span class="w"> </span><span class="nf">RTWPRINTF_LONG</span><span class="p">(</span><span class="n">LPCWSTR</span><span class="w"> </span><span class="n">strFormat</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">lVal</span><span class="p">);</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1">// dump the value of the lVal variable to the console</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">typedef</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="kr">__cdecl</span><span class="w"> </span><span class="n">SWPRINTF</span><span class="p">(</span><span class="kt">wchar_t</span><span class="w"> </span><span class="o">*</span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">sizeOfBuffer</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">wchar_t</span><span class="w"> </span><span class="o">*</span><span class="n">strFormat</span><span class="p">,</span><span class="w"> </span><span class="p">...);</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1">// writing formatted text to the buffer string</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">typedef</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="kr">__cdecl</span><span class="w"> </span><span class="n">SLEEPFT</span><span class="p">(</span><span class="n">PLARGE_INTEGER</span><span class="w"> </span><span class="n">Pause</span><span class="p">);</span><span class="w"> </span><span class="c1">// waiting</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="k">typedef</span><span class="w"> </span><span class="n">BOOL</span><span class="w"> </span><span class="kr">__cdecl</span><span class="w"> </span><span class="n">CAN_TRANSMIT</span><span class="p">(</span><span class="n">ULONG</span><span class="w"> </span><span class="n">Number</span><span class="p">,</span><span class="w"> </span><span class="n">ULONG</span><span class="w"> </span><span class="n">Id</span><span class="p">,</span><span class="w"> </span><span class="n">ULONG</span><span class="w"> </span><span class="n">Dlc</span><span class="p">,</span><span class="w"> </span><span class="n">PUCHAR</span><span class="w"> </span><span class="n">Tx_Data</span><span class="w"> </span><span class="p">);</span><span class="w"> </span><span class="c1">// reserved</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="k">typedef</span><span class="w"> </span><span class="n">BOOL</span><span class="w"> </span><span class="kr">__cdecl</span><span class="w"> </span><span class="n">CAN_TRANSMITREMOTE</span><span class="p">(</span><span class="n">ULONG</span><span class="w"> </span><span class="n">Number</span><span class="p">,</span><span class="w"> </span><span class="n">ULONG</span><span class="w"> </span><span class="n">Id</span><span class="p">,</span><span class="w"> </span><span class="n">ULONG</span><span class="w"> </span><span class="n">Dlc</span><span class="p">,</span><span class="w"> </span><span class="n">PUCHAR</span><span class="w"> </span><span class="n">Tx_Data</span><span class="p">);</span><span class="w"> </span><span class="c1">// reserved</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="k">typedef</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="kr">__cdecl</span><span class="w"> </span><span class="n">RTWPRINTF_EX</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">severity</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">wchar_t</span><span class="w"> </span><span class="o">*</span><span class="n">strFormat</span><span class="p">,</span><span class="w"> </span><span class="p">...);</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="c1">// dump formatted text to the console</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="cp">#ifdef __cplusplus</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">};</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="cp">#endif</span>
+</span></code></pre></div>
+<h3 id="pointers-to-diagnostic-functions">Pointers to diagnostic functions<a class="headerlink" href="#pointers-to-diagnostic-functions" title="Permanent link">&para;</a></h3>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">_PLC_IMPORT_FUNCTIONS</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">RTWPRINTF_STRING</span><span class="w"> </span><span class="o">*</span><span class="n">pRtWprintf_String</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">RTWPRINTF_LONG</span><span class="w"> </span><span class="o">*</span><span class="n">pRtWprintf_Long</span><span class="p">;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">SWPRINTF</span><span class="w"> </span><span class="o">*</span><span class="n">pswprintf</span><span class="p">;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">SLEEPFT</span><span class="w"> </span><span class="o">*</span><span class="n">pSleepFt</span><span class="p">;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">CAN_TRANSMIT</span><span class="w"> </span><span class="o">*</span><span class="n">pCAN_Transmit</span><span class="p">;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">CAN_TRANSMITREMOTE</span><span class="w"> </span><span class="o">*</span><span class="n">pCAN_TransmitRemote</span><span class="p">;</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">RTWPRINTF_EX</span><span class="w"> </span><span class="o">*</span><span class="n">pRtWprintf_Ex</span><span class="p">;</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">}</span><span class="w"> </span><span class="n">PLC_IMPORT_FUNCTIONS</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="custom-plc_data-structure">Custom PLC_DATA structure<a class="headerlink" href="#custom-plc_data-structure" title="Permanent link">&para;</a></h3>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">_PLC_DATA</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">{</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kt">size_t</span><span class="w"> </span><span class="n">structSize</span><span class="p">;</span><span class="w"> </span><span class="c1">// structure size in bytes</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">PSystem_Memory</span><span class="p">;</span><span class="w"> </span><span class="c1">// pointer to shared memory TGM_System</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">PData_Memory</span><span class="p">;</span><span class="w"> </span><span class="c1">// pointer to shared memory TGM_Data</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">POsc_Memory</span><span class="p">;</span><span class="w"> </span><span class="c1">// pointer to shared memory TGM_Oscilloscope</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">PCam_Memory</span><span class="p">;</span><span class="w"> </span><span class="c1">// pointer to shared memory TGM_Cam_Profile</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">PServo_Memory</span><span class="p">;</span><span class="w"> </span><span class="c1">// pointer to shared memory TGM_Servo</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">PDio_Memory</span><span class="p">;</span><span class="w"> </span><span class="c1">// pointer to shared memory TGM_Dio</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">PInterpolator_Memory</span><span class="p">;</span><span class="w"> </span><span class="c1">// pointer to shared memory TGM_Interpolator</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">Pointer_interpolator_params</span><span class="p">;</span><span class="w"> </span><span class="c1">// pointer to shared memory TGM_InterpolatorWriteMemory</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">Pointer_interpolator_get_position</span><span class="p">;</span><span class="w"> </span><span class="c1">// pointer to shared memory TGM_InterpolatorReadMemory</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">PCNCEx</span><span class="p">;</span><span class="w"> </span><span class="c1">// pointer to shared memory TGM_CNCEX</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">PGCode</span><span class="p">;</span><span class="w"> </span><span class="c1">// pointer to shared memory TGM_GCODE</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">PReserve3_Memory</span><span class="p">;</span><span class="w"> </span><span class="c1">// reserved</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">PReserve4_Memory</span><span class="p">;</span><span class="w"> </span><span class="c1">// reserved</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">PReserve5_Memory</span><span class="p">;</span><span class="w"> </span><span class="c1">// reserved</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">PReciveDataCan1</span><span class="p">;</span><span class="w"> </span><span class="c1">// reserved</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">PReciveDataCan2</span><span class="p">;</span><span class="w"> </span><span class="c1">// reserved</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="n">PLC_IMPORT_FUNCTIONS</span><span class="w"> </span><span class="n">functions</span><span class="p">;</span><span class="w"> </span><span class="c1">// structure with pointers to diagnostic functions</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="p">}</span><span class="w"> </span><span class="n">PLC_DATA</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">PPLC_DATA</span><span class="p">;</span>
+</span></code></pre></div>
+<h2 id="functions-by-priority">Functions by priority<a class="headerlink" href="#functions-by-priority" title="Permanent link">&para;</a></h2>
+<p>In this chapter, the functions are ordered from lowest priority to highest priority.
+The <code>Program_Ini</code> function is not a priority in the true sense of the word.
+This function is called only once when starting the Virtual PLC.</p>
+<h3 id="program_ini">Program_Ini<a class="headerlink" href="#program_ini" title="Permanent link">&para;</a></h3>
+<p>Declaration: <code>long Program_Ini(PLC_DATA *pData)</code>   </p>
+<p>This function is called only once, when the Virtual PLC is started.
+It is used mainly for initializing the Virtual PLC variables.
+The executive code of the <code>Program_Ini</code> function must not be empty.
+There is no limit to the length of time that a person may serve.</p>
+<div class="admonition info">
+<p class="admonition-title">Warning</p>
+<p>When starting the Virtual PLC (in the body of the Program_Ini function) it is advisable to check the PLC and TG Motion versions.</p>
+</div>
+<p><strong>Function return values</strong></p>
+<ul>
+<li>0 - error (PLC start-up stops; the user must solve the error and restart the PLC).</li>
+<li>1 - the function ended without errors.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Warning</p>
+<p>When loading the Virtual PLC, the values of global variables are not initialized, the constructors of global objects are not called.
+The initialization must be done in the <code>Program_Ini</code> function.</p>
+</div>
+<p><strong>Source code sample</strong></p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">long</span><span class="w"> </span><span class="nf">Program_Ini</span><span class="p">(</span><span class="n">PLC_DATA</span><span class="w"> </span><span class="o">*</span><span class="n">pData</span><span class="p">)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">{</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pData</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">pData</span><span class="o">-&gt;</span><span class="n">structSize</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">PLC_DATA</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pData</span><span class="o">-&gt;</span><span class="n">functions</span><span class="p">.</span><span class="n">pRtWprintf_Long</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pData</span><span class="o">-&gt;</span><span class="n">functions</span><span class="p">.</span><span class="n">pRtWprintf_String</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pData</span><span class="o">-&gt;</span><span class="n">functions</span><span class="p">.</span><span class="n">pswprintf</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pData</span><span class="o">-&gt;</span><span class="n">functions</span><span class="p">.</span><span class="n">pSleepFt</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pHeader</span><span class="o">-&gt;</span><span class="n">Compatibility_Id</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">ID_COMPATIBILITY</span><span class="p">)</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="p">{</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="n">pData</span><span class="o">-&gt;</span><span class="n">functions</span><span class="p">.</span><span class="n">pswprintf</span><span class="p">(</span><span class="n">info_ini</span><span class="p">,</span><span class="w"> </span><span class="n">SIZE_INFO</span><span class="p">,</span><span class="w"> </span><span class="n">L</span><span class="w"> </span><span class="s">&quot;Error start of PLC PLC_COMPABILITY_ID = %d</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="n">TGM_COMPATIBILITY_ID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">%</span><span class="n">d</span><span class="w"> </span><span class="err">\</span><span class="n">n</span><span class="s">&quot;, ID_COMPATIBILITY, pHeader-&gt;Compatibility_Id);</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="n">pData</span><span class="o">-&gt;</span><span class="n">functions</span><span class="p">.</span><span class="n">pRtWprintf_String</span><span class="p">(</span><span class="n">info_ini</span><span class="p">);</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="p">}</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1">//****************************************** Update PLC Version ***********************************</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="n">Version_PLC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Get_Version</span><span class="p">(</span><span class="n">PLC_VERSION</span><span class="p">);</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="c1">//*************************************************************************************************</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="program_01">Program_01<a class="headerlink" href="#program_01" title="Permanent link">&para;</a></h3>
+<p>Declaration: <code>long Program_01(PLC_DATA *pData)</code>   </p>
+<p>The function is called from TG Motion with the period specified in the <code>TGMotion4xx.ini</code> configuration file.
+The period is defined by the <code>Cycle_Time_Program_01</code> item, its value ranges from 100 to 10000&nbsp;μs (the upper limit is not limited).
+The length of the function execution should not exceed 20&nbsp;% of <code>Cycle_Time_Program_01</code> to leave time for the execution of <code>Program_02</code> and <code>Program_03</code> functions.
+This function is most often used for basic servicing of devices that do not need to be serviced regularly every <code>Cycle_Time</code>.
+Function <code>Program_01</code> has the lowest priority and can be interrupted at any time by functions <code>Program_02</code>, <code>Program_03</code>, <code>Program_04</code> and <code>Program_05</code>.</p>
+<h3 id="program_02">Program_02<a class="headerlink" href="#program_02" title="Permanent link">&para;</a></h3>
+<p>Declaration: <code>long Program_02(PLC_DATA *pData)</code>   </p>
+<p>The function is called from TG Motion with the period specified in the <code>TGMotion4xx.ini</code> configuration file.
+The period is defined by the <code>Cycle_Time_Program_02</code> item, its value ranges from 100 to 10000&nbsp;μs (the upper limit is not limited).
+The duration of the function execution should not exceed 20&nbsp;% of <code>Cycle_Time_Program_02</code> to leave time for the execution of the <code>Program_01</code> and <code>Program_03</code> functions.
+This function is usually implemented as an empty function.
+The <code>Program_02</code> function has low priority and can be interrupted at any time by the <code>Program_03</code>, <code>Program_04</code>, and <code>Program_05</code> functions.</p>
+<p><strong>Source code sample</strong></p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">long</span><span class="w"> </span><span class="nf">Program_02</span><span class="p">(</span><span class="n">PLC_DATA</span><span class="w"> </span><span class="o">*</span><span class="n">pData</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">{</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="program_03">Program_03<a class="headerlink" href="#program_03" title="Permanent link">&para;</a></h3>
+<p>Declaration: <code>long Program_03(PLC_DATA *pData)</code>   </p>
+<p>The function is called from TG Motion with the period specified in the <code>TGMotion4xx.ini</code> configuration file.
+The period is defined by the <code>Cycle_Time_Program_03</code> item, its value ranges from 100 to 10000&nbsp;μs (the upper limit is not limited).
+The length of the function execution should not exceed 20&nbsp;% of <code>Cycle_Time_Program_03</code> to leave time for the execution of the <code>Program_01</code> and <code>Program_02</code> functions.
+This function is usually implemented as an empty function.
+The <code>Program_03</code> function has low priority and can be interrupted at any time by the <code>Program_04</code> and <code>Program_05</code> functions.</p>
+<p><strong>Source code sample</strong></p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">long</span><span class="w"> </span><span class="nf">Program_03</span><span class="p">(</span><span class="n">PLC_DATA</span><span class="w"> </span><span class="o">*</span><span class="n">pData</span><span class="p">)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">{</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="program_04">Program_04<a class="headerlink" href="#program_04" title="Permanent link">&para;</a></h3>
+<p>Declaration: <code>long Program_04(PLC_DATA *pData)</code>   </p>
+<p>The function is called from TG Motion synchronously with the communication within the <code>Cycle_Time</code>, i.e. once during each <code>Cycle_Time</code>.
+It is defined in the <code>TGMotion4xx.ini</code> file by the Cycle_Time item (250&nbsp;μs, 500&nbsp;μs, 1000&nbsp;μs).
+The Program_04 function is most often used to modify the desired position of servo drives and to operate I/O units.
+It has the highest priority (as does the Program_05 function) and always executes in its entirety without interruption.
+The execution time of the Program_04 function must not exceed 10&nbsp;% of <code>Cycle_Time</code> to ensure timing accuracy of communication with servo drives and I/O units.</p>
+<div class="admonition info">
+<p class="admonition-title">Warning</p>
+<p>The function <code>SleepFt</code> must not be called in the function Program_04</p>
+</div>
+<h3 id="program_05">Program_05<a class="headerlink" href="#program_05" title="Permanent link">&para;</a></h3>
+<p>Declaration: <code>long Program_05(PLC_DATA *pData)</code>   </p>
+<p>The function is called from TG Motion synchronously with the interpolator, i.e. several times during each <code>Cycle_Time</code>.
+The Program_05 function is most often used to modify the position calculated by the interpolator module.
+It has the highest priority (as does the Program_04 function) and always executes in its entirety without interruption.
+The execution time of the Program_05 function must not exceed 10 μs to ensure timing accuracy of communication with servo drives and I/O units.</p>
+<div class="admonition info">
+<p class="admonition-title">Warning</p>
+<p>The function <code>SleepFt</code> must not be called in the function Program_05</p>
+</div>
+<h2 id="timing-sequence-of-function-calls">Timing sequence of function calls<a class="headerlink" href="#timing-sequence-of-function-calls" title="Permanent link">&para;</a></h2>
+<p><strong>Cycle_Time = 250 μs</strong></p>
+<p><a class="glightbox" href="../img/PLC_250us.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PLC execution algorithm for Cycle_Time = 250 μs" src="../img/PLC_250us.png" style="width:40%;" /></a></p>
+<p>After starting the PLC and successful execution of the <code>Program_Ini</code> function, a cyclic loop call lasting 250 μs is started.
+It is evenly divided into 5 equal time periods called regularly every 50 μs.</p>
+<ul>
+<li>
+<p><strong>Time 0 μs</strong>
+    The necessary internal calculations are performed and the EtherCAT data is received. The function Program_05 is then called and the entire function is executed without interruption.   </p>
+</li>
+<li>
+<p><strong>Time 50 μs</strong>
+    The necessary internal calculations are performed and the data is sent to EtherCAT. The function Program_05 is then called and the entire function is executed without interruption.   </p>
+</li>
+<li>
+<p><strong>Time 100 μs</strong>
+    The necessary internal calculations are performed and the desired position data is calculated using PG generators.
+    Then    willfunction Program_05, which will be executed without interruption.</p>
+</li>
+<li>
+<p><strong>Time 150 μs</strong>
+    The necessary internal calculations are performed and the function Program_05 is called, which is executed without interruption.
+    Then the function Program_04 is called, which is also executed without interruption.
+    Finally, all the data needed for the Oscilloscope is recorded.</p>
+</li>
+<li>
+<p><strong>Time 200 μs</strong>
+    The necessary internal calculations are performed and the function Program_05 is called, which is executed without interruption. <br />
+    If the computing capacity is free during any cycle, the Program_01, Program_02 and Program_03 functions are operated if necessary.   </p>
+</li>
+</ul>
+<p><strong>Cycle_Time = 500 μs</strong></p>
+<p><a class="glightbox" href="../img/PLC_500us.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PLC execution algorithm for Cycle_Time = 500 μs" src="../img/PLC_500us.png" style="width:40%;" /></a></p>
+<p>After starting the PLC and successful execution of the <code>Program_Ini</code> function, a cyclic loop call lasting 500 μs is started.
+It is evenly divided into 5 equal time periods called regularly every 100 μs.</p>
+<ul>
+<li>
+<p><strong>Time 0 μs</strong>
+    The necessary internal calculations are performed and the EtherCAT data is received. The function Program_05 is then called and the entire function is executed without interruption.</p>
+</li>
+<li>
+<p><strong>Time 100 μs</strong>
+    The necessary internal calculations are performed and the data is sent to EtherCAT. The function Program_05 is then called and the entire function is executed without interruption.</p>
+</li>
+<li>
+<p><strong>Time 200 μs</strong>
+    The necessary internal calculations are performed and the desired position data is calculated using PG generators.
+    Then the function Program_05 is called and the whole function is executed without interruption.</p>
+</li>
+<li>
+<p><strong>Time 300 μs</strong>
+    The necessary internal calculations are performed and the function Program_05 is called, which is executed without interruption.
+    Then the function Program_04 is called, which is also executed without interruption.
+    Finally, all the data needed for the Oscilloscope is recorded.</p>
+</li>
+<li>
+<p><strong>Time 400 μs</strong>
+    The necessary internal calculations are performed and the function Program_05 is called, which is executed without interruption.
+    If the computing capacity is free during any cycle, the Program_01, Program_02 and Program_03 functions are operated if necessary.</p>
+</li>
+</ul>
+<p><strong>Cycle_Time = 1000 μs</strong></p>
+<p><a class="glightbox" href="../img/PLC_1000us.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PLC execution algorithm for Cycle_Time = 1000 μs" src="../img/PLC_1000us.png" style="width:40%;" /></a></p>
+<p>After starting the PLC and successful execution of the <code>Program_Ini</code> function, a cyclic loop call lasting 1000 μs is started.
+It is evenly divided into 10 equal time periods called regularly every 100 μs.</p>
+<ul>
+<li>
+<p><strong>Time 0 μs</strong>
+    The necessary internal calculations are performed and the EtherCAT data is received.
+    Then the function Program_05 is called and the whole function is executed without interruption.</p>
+</li>
+<li>
+<p><strong>Time 100 μs</strong>
+    The necessary internal calculations are performed and the data is sent to EtherCAT.
+    Then the function Program_05 is called and the whole function is executed without interruption.</p>
+</li>
+<li>
+<p><strong>Time 200 μs</strong>
+    The necessary internal calculations are performed and the data is sent to EtherCAT.
+    Then the function Program_05 is called and the whole function is executed without interruption.</p>
+</li>
+<li>
+<p><strong>Time 300 μs</strong>
+    The necessary internal calculations are performed and the function Program_05 is called, which is executed without interruption.
+    Then the function Program_04 is called, which is also executed without interruption.
+    Finally, all the data needed for the Oscilloscope is recorded.</p>
+</li>
+<li>
+<p><strong>Time 400 μs, 500 μs, 600 μs, 700 μs, 800 μs, 900 μs</strong>
+    In all of these time periods, the necessary internal calculations are performed and the Program_05 function is called, which is executed in its entirety without interruption.
+    If the computing capacity is free during any cycle, the Program_01, Program_02 and Program_03 functions are operated if necessary.</p>
+</li>
+</ul>
+<h1 id="tools-for-plc-debugging">Tools for PLC debugging<a class="headerlink" href="#tools-for-plc-debugging" title="Permanent link">&para;</a></h1>
+<h2 id="control-observer">Control Observer<a class="headerlink" href="#control-observer" title="Permanent link">&para;</a></h2>
+<p>The main tool for debugging the Virtual PLC from the Windows environment is the Control Observer. It is supplied with TG Motion.
+It is a set of utilities developed for TG Motion system diagnostics, PLC debugging and Windows applications.
+Control Observer contains tools for direct testing and control of servo drives, loading and running PLC code and displaying system timer parameters.
+Another group of utilities is used to view, monitor, or modify selected shared memory registers.
+Control Observer is a self-executable program <code>Control_Observer_II.exe</code> without installation, which comes with 3 libraries:</p>
+<ul>
+<li><code>TGM_Comm_Int_2.dll</code> - provides communication with TG Motion running on the same computer.</li>
+<li><code>TGM_Mini.dll</code> - handles TG Motion running in TGMmini.</li>
+<li><code>TGM_Remote.dll</code> - allows connection via LAN to TG Motion running on another computer</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Warning</p>
+<p>To access the TGM_Data shared memory data, the <strong>Select Registers</strong> utility uses the Free Registers page, memory type DAT.</p>
+</div>
+<p><strong>Components of Control Observer</strong></p>
+<ul>
+<li><strong>Servo Tester</strong> - utility for testing and controlling servo drives.</li>
+<li><strong>PLC Loader</strong> - used to load the PLC and start it.</li>
+<li><strong>System Timer</strong> - displays the current CPU load of each TG Motion process.</li>
+<li><strong>Oscilloscope</strong> - used to graphically display the values of selected registers depending on time.</li>
+<li><strong>Graphic Viewer</strong> - used to graphically display a continuous series of selected registers.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Warning</p>
+<p>See the Control Observer chapter for a more detailed description.</p>
+</div>
+<h2 id="console">Console<a class="headerlink" href="#console" title="Permanent link">&para;</a></h2>
+<p>Diagnostic functions from the <code>PLC_DATA</code> structure are used to write to the RTX Server console.
+These are 3 types of diagnostic functions:</p>
+<ul>
+<li>dump the string to the console</li>
+<li>dump the value of the lVal variable (value of the long type) into the console</li>
+<li>output of formatted text to the console</li>
+</ul>
+<h2 id="oscilloscope">Oscilloscope<a class="headerlink" href="#oscilloscope" title="Permanent link">&para;</a></h2>
+<p>Oscilloscope is a separate utility running in TG Motion.
+It is used to capture the values of the required registers in the exact time interval <code>Cycle_Time</code> and store them in the shared memory <code>TGM_Oscilloscope</code>.
+This happens immediately after the Program_04 function is executed.
+The Oscilloscope utility in the Control Observer takes care of displaying the captured data and setting the parameters affecting the recording of values.</p>
+<div class="admonition info">
+<p class="admonition-title">Warning</p>
+<p>See the Oscilloscope chapter for a more detailed description.</p>
+</div>
+<h2 id="windows-applications">Windows applications<a class="headerlink" href="#windows-applications" title="Permanent link">&para;</a></h2>
+<p>Applications running under the Windows operating system also have access to shared memory.
+They can be used to read the values of registers or even change them.</p>
+<div class="admonition info">
+<p class="admonition-title">Warning</p>
+<p>TG Motion runs in a real-time environment, i.e. with a higher priority than processes running under Windows.
+Therefore, it is not possible to ensure lossless capture of all necessary values from Windows applications, or to provide an operational response to situations that arise.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 TG Drives, s.r.o.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.path", "navigation.top", "toc.integrate", "search.highlight", "header.autohide", "content.footnote.tooltips", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

@@ -1,0 +1,9256 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Description EN">
+      
+      
+      
+        <link rel="canonical" href="https://tgd-hw.github.io/tgmanGH/en/Manual/CZ/SW/Profinet/md/TIA.html">
+      
+      
+        <link rel="prev" href="network.html">
+      
+      
+        <link rel="next" href="profidrive.html">
+      
+      
+      <link rel="icon" href="../../../../../../Manual/source/img/TGsymbol.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>TIA portal - English</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#using-tgz-in-tia-portal" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://www.tgdrives.cz/" title="English" class="md-header__button md-logo" aria-label="English" data-md-component="logo">
+      
+  <img src="../../../../../../Manual/source/img/TGlogoFullWhite.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            English
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TIA portal
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../../../Manual/CZ/SW/Profinet/md/TIA.html" hreflang="cs" class="md-select__link">
+              Česky
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="TIA.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../index.html" class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../TGZ/TGZ-D-48-13_26/md/mark.html" class="md-tabs__link">
+          
+  
+  TGZ
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../TGS/TGS-320-10_15/md/mark.html" class="md-tabs__link">
+          
+  
+  TGS
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../TGM/TGMmini/md/basic.html" class="md-tabs__link">
+          
+  
+  TGM
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../ECAT/md/intro.html" class="md-tabs__link">
+          
+  
+  SW/FW
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../ETC/TGHall/md/description.html" class="md-tabs__link">
+          
+  
+  Etc.
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../source/md/cert.html" class="md-tabs__link">
+        
+  
+    
+  
+  Certificates
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://www.tgdrives.cz/" title="English" class="md-nav__button md-logo" aria-label="English" data-md-component="logo">
+      
+  <img src="../../../../../../Manual/source/img/TGlogoFullWhite.svg" alt="logo">
+
+    </a>
+    English
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-48-13/26
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-48-13/26
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-48-50/100
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-48-50/100
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-50/100
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-50/100
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/250
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/250
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/250-O
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/250-O
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/300
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/300
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/300-O
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/300-O
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/425
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/425
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/425-O
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/425-O
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-230-5/15
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-230-5/15
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-320-5/10
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_11">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-320-5/10
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_12" id="__nav_2_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-320-5/15
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_12">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-320-5/15
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-400-3/9
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-400-3/9
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_14" id="__nav_2_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-400-7/15
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_14">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-400-7/15
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_15" id="__nav_2_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-400-10/20
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_15">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-400-10/20
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_16" id="__nav_2_16_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-400-14/30
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_16">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-400-14/30
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_17" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_17" id="__nav_2_17_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-560-3/9
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_17">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-560-3/9
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_18" id="__nav_2_18_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-560-7/15
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_18">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-560-7/15
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_19" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_19" id="__nav_2_19_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-560-10/20
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_19_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_19">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-560-10/20
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_20" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_20" id="__nav_2_20_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-560-30/50
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_20_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_20">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-560-30/50
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_21" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_21" id="__nav_2_21_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-50/100 RI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_21_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_21">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-50/100 RI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_22" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_22" id="__nav_2_22_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/250 RI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_22_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_22">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/250 RI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_23" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_23" id="__nav_2_23_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/300 RI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_23_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_23">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/300 RI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_24" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_24" id="__nav_2_24_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Common hardware
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_24_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_24">
+            <span class="md-nav__icon md-icon"></span>
+            Common hardware
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/LED/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Status and errors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_DI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Digital inputs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_DO.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Digital outputs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_AI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analog inputs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_CAN.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAN bus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_FBE.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FBE feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_FB12.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FB1, FB2 feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/SD/md/SD.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SD cards
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_25" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_25" id="__nav_2_25_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Control system
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_25_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_25">
+            <span class="md-nav__icon md-icon"></span>
+            Control system
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REG/md/TGZstructure.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regulation structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REG/md/MotorSettings.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameter settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REG/md/PG.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Profile generator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REG/md/AuxFunc.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Other functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REG/md/ESTOP.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Emergency braking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_26" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_26" id="__nav_2_26_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ GUI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_26_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_26">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ GUI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/connection.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TGZ connection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/parameters.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameter settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/osc.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oscilloscope
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/FW.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware upload
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/userProg.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User program
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGS
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            TGS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGS-320-10/15
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            TGS-320-10/15
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGS-560-25/50
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            TGS-560-25/50
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGS-560-50/100
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            TGS-560-50/100
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrical installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGM
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            TGM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGMmini
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            TGMmini
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMmini/md/basic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMmini/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMmini/md/connectors.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connector description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMmini/md/linux.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMmini/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMmini/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMmini/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example schematic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGMcontroller
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            TGMcontroller
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMcontroller/md/basic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMcontroller/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMcontroller/md/connectors.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connector description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMcontroller/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dimensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMcontroller/md/software.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ+Motion
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ+Motion
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGZpMotion/md/basic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGZpMotion/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGZpMotion/md/connectors.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connector description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGZpMotion/md/TGZ.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TGZ servoamplifier
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGZpMotion/md/software.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    SW/FW
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            SW/FW
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    EtherCAT
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            EtherCAT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECAT/md/intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECAT/md/packet.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comunication description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECAT/md/network.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Network settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECAT/md/EtherCAT.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EtherCAT bus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECAT/md/objects.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Object library
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECAT/md/twinCAT.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TwinCAT and TGZ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECAT/md/codesys.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codesys
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Profinet RT
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Profinet RT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="general.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    General
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="network.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Network settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    TIA portal
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="TIA.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    TIA portal
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-tgz-in-tia-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using TGZ in TIA Portal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#positioning-mode-with-telegram-111" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positioning mode with telegram 111
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-control-bits-in-configepos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Control Bits in ConfigEPos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-s7-300-or-s7-400-plc-with-telegram-111" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using S7-300 or S7-400 PLC with Telegram 111
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speed-mode-using-standard-telegram-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speed Mode Using Standard Telegram 3
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="profidrive.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PROFIdrive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    EtherNET UDP
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            EtherNET UDP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENET/md/intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENET/md/packet.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comunication description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CAN
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            CAN
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CAN/md/intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CAN/md/settings.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comunication description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGMotion
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            TGMotion
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMotion/md/PLC.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PLC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMotion/md/HW.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hardware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMotion/md/interpolator.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interpolator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMotion/md/osc.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oscilloscope
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Etc.
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Etc.
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ETC/TGHall/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TGHall
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ETC/TGcable/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cable connections
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/cert.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Certificates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>TIA portal</h1>
+
+<h2 id="using-tgz-in-tia-portal">Using TGZ in TIA Portal<a class="headerlink" href="#using-tgz-in-tia-portal" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Be careful that the drive can start to move without previous warning.</li>
+<li>Take the appropriate measures to ensure that the operating and service personnel is aware of this danger.</li>
+<li>Implement appropriate protections to ensure that any unintended movement of the machines cannot result in any dangerous situation.</li>
+<li>The user is responsible that, in the event of failure of the drive, the complete system is set to state that is safe for both the machinery and personnel.</li>
+</ul>
+<h2 id="positioning-mode-with-telegram-111">Positioning mode with telegram 111<a class="headerlink" href="#positioning-mode-with-telegram-111" title="Permanent link">&para;</a></h2>
+<p>The most used operating mode is the positioning mode using the basic positioner of TGZ and the TIA Portal function block SinaPos with telegram 111.
+Following are the possible steps to create a new project with two TGZ servo amplifiers, both in two axes variant.</p>
+<ul>
+<li>Create a new project.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet11.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet11.webp" style="width:90%;" /></a></p>
+<ul>
+<li>Open the project view.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet12.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet12.webp" style="width:90%;" /></a></p>
+<ul>
+<li>Install the XML GSD files describing the TGZ device in PROFINET network.
+  There are two types of files, one for the single axis variant, called <code>GSDML-V2.4-TGDrives-TGZ-S-xxxxx.xml</code> and the second for the double axis TGZ variant <code>GSDML-V2.4-TGDrives-TGZ-D-xxxxx.xml</code> (where <code>xxxxx</code> stands for file creation date).</li>
+</ul>
+<!-- add placeholders for GSDML-V2.4-TGDrives-TGZ-S-xxxxx.xml and GSDML-V2.4-TGDrives-TGZ-D-xxxxx.xml - direct download links from the web -->
+
+<p>The files can be downloaded from the TG Drives website.</p>
+<ul>
+<li>Select menu item <code>Options|Manage general station description files (GSD)</code>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet13.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet13.webp" style="width:90%;" /></a></p>
+<ul>
+<li>Enter the source path where the GSDML files are stored, select the appropriate file and click on the <strong>Install</strong> button.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Both files can be installed simultaneously.</p>
+</div>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet14.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet14.webp" style="width:50%;" /></a></p>
+<ul>
+<li>In the Project tree on left top, double click on the <strong>Add new device item</strong>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet15.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet15.webp" style="width:30%;" /></a></p>
+<ul>
+<li>Select the PLC controller used in the hardware project.
+  For this tutorial, the PLC S7-1200 is used.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet16.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet16.webp" style="width:50%;" /></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Be careful to choose the right firmware version (V4.1 here).</p>
+</div>
+<ul>
+<li>The <strong>Devices &amp; networks</strong> window should open in the TIA portal.
+  If not, use the tree view item <strong>Devices &amp; networks</strong> in the Project view and open the window by double click.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet17.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet17.webp" style="width:90%;" /></a></p>
+<ul>
+<li>Now it is time to add TGZ drives to the project.
+  In the <strong>Catalog pane</strong>, open the <strong>Other field devices</strong> item, and navigate to <code>PROFINET IO|Drives|TGDrives|tgz-d|tgz-d</code>.
+  Add the device to the project by double click.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet18.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet18.webp" style="width:50%;" /></a></p>
+<ul>
+<li>Do it two times to add two TGZ servo drives.
+  Use <code>tgz-s</code> item to work with single axis TGZ variant.
+  The <strong>Devices &amp; network</strong> window should look like:</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet19.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet19.webp" style="width:90%;" /></a></p>
+<ul>
+<li>Rename the drives in the <strong>Network overview</strong> pane according to the hardware project.
+  The names must be the same as used during <a href="network.html#ProfinetIPsettings">preparing the devices</a>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet20.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet20.webp" style="width:30%;" /></a></p>
+<ul>
+<li>Connect the drives with PLC.
+  Click on the blue text <strong>Not assigned</strong> and select the <strong>PLC PROFINET interface_1</strong>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet21.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet21.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Do the same for the second TGZ.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet22.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet22.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Optionally use the <strong>Topology</strong> view and connect the PLC and TGZ devices by mouse in the same manner as in reality.
+  This step is not necessary.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet23.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet23.webp" style="width:70%;" /></a>
+<a class="glightbox" href="../../../../../../Manual/source/img/profinet24.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet24.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Assign the right IP addresses to all devices in the project.
+  The IP addresses and PROFINET device names must correspond to the values entered in the <a href="network.html#ProfinetIPsettings">Name and IP address of the device</a>.
+  Activate the connection in the PLC box (green rectangle) and in the <strong>Properties</strong> pane below use the <strong>Ethernet addresses</strong> item.
+  Enter the right IP address in the text box, together with the Subnet mask (usually 255.255.255.0).</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet25.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet25.webp" style="width:70%;" /></a></p>
+<ul>
+<li>In a similar way assign the IP addresses to other devices.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet26.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet26.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Switch to <strong>Device view</strong> (on the top right) and select the first TGZ device (<code>tgz_1</code>) by the combo box.
+  In the hardware catalog on the right, double click on <strong>Siemens telegram 111</strong>.
+  Do it twice for both axes (slot 1 and slot 2).</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet27.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet27.webp" style="width:90%;" /></a></p>
+<ul>
+<li>
+<p>The result should look like:
+<a class="glightbox" href="../../../../../../Manual/source/img/profinet28.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet28.webp" style="width:60%;" /></a></p>
+</li>
+<li>
+<p>Rename the axes (slots 1 and 2) according to the real hardware project.</p>
+</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet29.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet29.webp" style="width:60%;" /></a></p>
+<ul>
+<li>Do the same for the second TGZ drive and get something like:</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet30.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet30.webp" style="width:90%;" /></a></p>
+<ul>
+<li>Download the project to the PLC by using the icon <strong>Download</strong> to device or by using menu command <code>Online|Download to device</code>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet31.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet31.webp" style="width:60%;" /></a></p>
+<ul>
+<li>It is necessary to find the PLC.
+  Click on the <strong>Start search</strong> button in the following dialog.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet32.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet32.webp" style="width:70%;" /></a></p>
+<ul>
+<li>After a while the PLC should appear in the list <strong>Select target device</strong>.
+  Select it and click on the <strong>Load</strong> button.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet33.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet33.webp" style="width:70%;" /></a></p>
+<ul>
+<li>The dialog box <strong>Load preview</strong> summarizes the load status.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet34.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet34.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Click on <strong>Load</strong> and then on the <strong>Finish</strong> button.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet35.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet35.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Check the hardware configuration.
+  Click on the icon <strong>Go online</strong> in the command bar.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet36.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet36.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Wait for the green mark status in the project view.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet37.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet37.webp" style="width:30%;" /></a></p>
+<ul>
+<li>Switch back to offline mode by the <strong>Go offline</strong> command.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet38.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet38.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Expand the item <strong>Project view to Program blocks|Main [OB1]</strong> and open it by double click.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet39.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet39.webp" style="width:30%;" /></a></p>
+<ul>
+<li>A new window with PLC blocks will open.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet40.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet40.webp" style="width:90%;" /></a></p>
+<ul>
+<li>Find the function block <strong>SinaPos</strong> (FB) in the <strong>Instructions</strong> pane on the right.
+  The search edit box can be used for that.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet41.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet41.webp" style="width:30%;" /></a></p>
+<ul>
+<li>Drag and drop the SinaPos block to the line <strong>Network 1</strong> and assign the Data block name.
+  Preferably use the same name as for axes (slots) assigned in the previous steps.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet42.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet42.webp" style="width:90%;" /></a></p>
+<ul>
+<li>Connect the telegram with the HWIDSTW and HWIDZSW inputs of the function block.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet43.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet43.webp" style="width:50%;" /></a></p>
+<ul>
+<li>The result should be something like:</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet44.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet44.webp" style="width:40%;" /></a></p>
+<ul>
+<li>Repeat the SinaPos FB drag and drop and axis assignment for <strong>Network 2</strong> together with <strong>Axis_2</strong>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet45.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet45.webp" style="width:40%;" /></a></p>
+<ul>
+<li>The same process is for drive tgz_2 and <strong>Axis_3</strong> and <strong>Axis_4</strong>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet46.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet46.webp" style="width:40%;" /></a>
+<a class="glightbox" href="../../../../../../Manual/source/img/profinet47.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet47.webp" style="width:40%;" /></a></p>
+<ul>
+<li>Compile and download the modified project to the PLC by the command <code>Online|Download to device</code> and switch the TIA Portal back to online mode.</li>
+<li>The function block can be controlled by a watch table.
+  Create a new table by <code>Project view item PLC_1|Watch and force tables|Add new watch table</code> and rename it to <strong>Axis_1_Control</strong>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet48.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet48.webp" style="width:30%;" /></a></p>
+<ul>
+<li>Add the following SinaPos function block inputs and outputs:</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet49.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet49.webp" style="width:90%;" /></a></p>
+<ul>
+<li>When the values are correctly set (ModePos, Position, Velocity, EnableAxis), by switching <strong>ExecuteMode</strong> from FALSE to TRUE the desired movement should start.
+  The Status must be <code>16#7002</code> for the correct behavior of the function block.
+  See the online <a href="https://cache.industry.siemens.com/dl/files/845/109736845/att_928039/v1/109736845_G120_CU250S2PN_at_S7_1200_SINA_POS_v10_DOCU_en.pdf">documentation for the SinaPos</a> for additional information how to operate this FB.</li>
+<li>Optionally create additional watch tables for working with other axes.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet50.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet50.webp" style="width:90%;" /></a></p>
+<h2 id="supported-control-bits-in-configepos">Supported Control Bits in ConfigEPos<a class="headerlink" href="#supported-control-bits-in-configepos" title="Permanent link">&para;</a></h2>
+<p>Additional bits can be used in <strong>ConfigEPos</strong> value to fine control the TGZ behavior.
+When setting to <code>16#0000_0103</code> (bit 8 is also set), the constant setpoint transfer is activated.
+When the traversing task is active, it is possible to change the target position or velocity, and the drive responds immediately without the need of toggling the ExecuteMode bit.
+When the task finishes, the drive goes back to state <code>S41</code> (see PROFIdrive documentation) and waits for the rising edge of ExecuteMode bit.</p>
+<p>It is also possible to set the <strong>ConfigEPos</strong> to <code>16#0010_0103</code> (set bits 8 and 20).
+Then the drive keeps the state <code>S451</code> even if the task is finished, and a new task is immediately started when a new position arrives.
+To exit from state <code>S451</code>, the <strong>ConfigEPos</strong> value must be changed to <code>16#0000_0103</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that the value <code>16#0000_0103</code> or <code>16#0010_0103</code> can be used only for absolute positioning, i.e., when ModePos = 2.
+As the minimal cycle time is 1 ms, it is possible to achieve constant positioning by PLC.
+It is necessary to correctly set acceleration and speed values.
+Also, the trapezoidal speed profile is recommended (Profile generator type 3).</p>
+</div>
+<p>Bit 8 of the <strong>ConfigEPos</strong> is internally mapped to bit 12 of the POS_STW1 control word in the telegram (MdiTrTyp).
+Bit 20 is mapped to bit 11 of the POS_STW1.</p>
+<h2 id="using-s7-300-or-s7-400-plc-with-telegram-111">Using S7-300 or S7-400 PLC with Telegram 111<a class="headerlink" href="#using-s7-300-or-s7-400-plc-with-telegram-111" title="Permanent link">&para;</a></h2>
+<p>To use the older PLCs, download a DriveLib library from the internet.
+At the time of writing this manual, the filename was <code>Drive_Lib_V62_S7_300_400.zip</code>.
+Extract it and install it to TIA portal.
+After that, the steps to create a project will be the same as above, only use the <strong>Libraries</strong> tab and there find the <strong>SINA_POS</strong> function to add it to the <strong>Main’s Network</strong> line.</p>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet51.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet51.webp" style="width:30%;" /></a></p>
+<p>The TGZ servo drive now supports startup modes Advanced and Legacy.
+The Legacy mode is used for S7-300 or S7-400.
+The modified GSDML files (PNIO version 2.4) are available at the <a href="https://www.tgdrives.cz/ke-stazeni/digitalni-servozesilovace-ke-stazeni/#c425">TGDrives website</a>.
+There are also GSDML files of version V2.2 for use in older software packages.</p>
+<h2 id="speed-mode-using-standard-telegram-3">Speed Mode Using Standard Telegram 3<a class="headerlink" href="#speed-mode-using-standard-telegram-3" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Create a new project and name it <em>TGZ-S-Tele3</em>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet52.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet52.webp" style="width:90%;" /></a></p>
+<ul>
+<li>Open the project view.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet53.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet53.webp" style="width:90%;" /></a></p>
+<ul>
+<li>Double click on <strong>Add new device</strong>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet54.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet54.webp" style="width:30%;" /></a></p>
+<ul>
+<li>Select the right PLC controller and its version.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet55.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet55.webp" style="width:50%;" /></a></p>
+<ul>
+<li>Select <strong>Network view</strong> and expand the tree in <code>Hardware catalog to item Other field devices|PROFINET IO|Drives|TGDrives|tgz-s|tgz-s</code>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet56.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet56.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Double click on tgz-s, the device will be added to the project in <strong>Network view</strong>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet57.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet57.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Rename the TGZ device and give it a name of the device – the same which was set during commissioning as described in <a href="network.html#ProfinetIPsettings">Name and IP address of the device</a>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet58.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet58.webp" style="width:70%;" /></a></p>
+<ul>
+<li>For this example, we use the name tgz_2.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet59.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet59.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Connect the TGZ drive to PLC by clicking on the <strong>Not assigned</strong> blue text and selecting <code>PLC_1 PROFINET interface_1</code>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet60.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet60.webp" style="width:70%;" /></a></p>
+<ul>
+<li>The result should look like this:</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet61.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet61.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Assign the IP address to the PLC.
+  Use the address described in the section <a href="network.html#ProfinetIPsettings">Name and IP address of the device</a>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet62.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet62.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Assign the IP address to the TGZ servo drive. Again, use the address already stored in the TGZ device.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet63.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet63.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Select telegram 3 for slot 1 of the TGZ.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet64.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet64.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Double click on the <strong>Standard telegram 3</strong> item to set the telegram automatically.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet65.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet65.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Download the hardware configuration to PLC:</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet66.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet66.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Click on the <strong>Start search</strong> button.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet67.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet67.webp" style="width:70%;" /></a></p>
+<ul>
+<li>The PLC should appear in the list box.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet68.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet68.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Click on the <strong>Load</strong> button, wait for compilation to finish, and in the following dialog box select <strong>Stop all modules</strong> and click on the <strong>Load</strong> button again.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet69.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet69.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Finish the loading by clicking on the <strong>Finish</strong> button.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet70.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet70.webp" style="width:70%;" /></a></p>
+<ul>
+<li>If not yet selected, choose telegram number 3 in the TGZ GUI service program.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet71.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet71.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Save parameters and restart the TGZ drive.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet72.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet72.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Switch TIA portal to <strong>Online mode</strong>, there should be green check marks in the project view.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet73.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet73.webp" style="width:30%;" /></a></p>
+<ul>
+<li>If there are any errors, stop and start the PLC.
+  Also, check that the <code>PD_SetDataCounter</code> parameter is increasing in the TGZ GUI service program.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet74.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet74.webp" style="width:30%;" /></a></p>
+<ul>
+<li>Expand the <code>PLC_1|Technology object|Add new object</code> item and double-click on it.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet75.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet75.webp" style="width:30%;" /></a></p>
+<ul>
+<li>Select <strong>Motion control</strong> and <strong>TO_PositioningAxis</strong>. Optionally, give a suitable name for the object.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet76.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet76.webp" style="width:70%;" /></a></p>
+<ul>
+<li>In the <code>Axis_1</code> window under <code>Basic parameters|General</code>, select the <strong>PROFIdrive</strong> radio button.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet77.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet77.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Switch to <code>Basic parameters|Drive</code> and select the right drive.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet78.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet78.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Update the <strong>Reference speed</strong> and <strong>Maximum speed</strong> if necessary, according to the machinery.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet79.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet79.webp" style="width:50%;" /></a></p>
+<ul>
+<li>Select <code>Basic parameters|Encoder</code> and switch to <strong>Encoder on drive</strong>.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet80.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet80.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Optionally, set up other parameters in the <strong>Extended parameters</strong> items according to the hardware project.</li>
+<li>When finished, switch to offline mode and download the modified project to the PLC using the menu command <code>Online|Download to device</code>. The process is the same as described above.</li>
+<li>Switch back to online mode and double-click on the <strong>Commissioning</strong> item in the project view.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet81.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet81.webp" style="width:30%;" /></a></p>
+<ul>
+<li>Click on the <strong>Activate</strong> button at the top of the window.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet82.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet82.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Enable the axis using the <strong>Enable</strong> button.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet83.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet83.webp" style="width:70%;" /></a></p>
+<ul>
+<li>Now you can Jog the axis, perform Homing, and/or Positioning depending on the selected command.</li>
+</ul>
+<p><a class="glightbox" href="../../../../../../Manual/source/img/profinet84.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Profinet img" loading="lazy" src="../../../../../../Manual/source/img/profinet84.webp" style="width:70%;" /></a></p>
+<p>For a detailed description of the technology object, refer to the online documentation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 TG Drives, s.r.o.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.path", "navigation.top", "toc.integrate", "search.highlight", "header.autohide", "content.footnote.tooltips", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

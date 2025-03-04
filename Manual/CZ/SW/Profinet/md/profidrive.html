@@ -1,0 +1,9245 @@
+
+<!doctype html>
+<html lang="cs" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Český manuál">
+      
+      
+      
+        <link rel="canonical" href="https://tgd-hw.github.io/tgmanGH/Manual/CZ/SW/Profinet/md/profidrive.html">
+      
+      
+        <link rel="prev" href="TIA.html">
+      
+      
+        <link rel="next" href="../../ENET/md/intro.html">
+      
+      
+      <link rel="icon" href="../../../../source/img/TGsymbol.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>PROFIdrive - Česky</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#parametry-pohonu-profidrive" class="md-skip">
+          Přeskočit obsah
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Záhlaví">
+    <a href="https://www.tgdrives.cz/" title="Česky" class="md-header__button md-logo" aria-label="Česky" data-md-component="logo">
+      
+  <img src="../../../../source/img/TGlogoFullWhite.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Česky
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PROFIdrive
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Zvolte jazyk">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="profidrive.html" hreflang="cs" class="md-select__link">
+              Česky
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../../en/Manual/CZ/SW/Profinet/md/profidrive.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Hledat" placeholder="Hledat" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Vyhledávání">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Vyčistit" aria-label="Vyčistit" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializace vyhledávání
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Karty" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../index.html" class="md-tabs__link">
+        
+  
+    
+  
+  Úvod
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../TGZ/TGZ-D-48-13_26/md/mark.html" class="md-tabs__link">
+          
+  
+  TGZ
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../TGS/TGS-320-10_15/md/mark.html" class="md-tabs__link">
+          
+  
+  TGS
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../TGM/TGMmini/md/basic.html" class="md-tabs__link">
+          
+  
+  TGM
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../ECAT/md/intro.html" class="md-tabs__link">
+          
+  
+  SW/FW
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../ETC/TGHall/md/description.html" class="md-tabs__link">
+          
+  
+  Ostatní
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../source/md/cert.html" class="md-tabs__link">
+        
+  
+    
+  
+  Certifikáty
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigace" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://www.tgdrives.cz/" title="Česky" class="md-nav__button md-logo" aria-label="Česky" data-md-component="logo">
+      
+  <img src="../../../../source/img/TGlogoFullWhite.svg" alt="logo">
+
+    </a>
+    Česky
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Úvod
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-48-13/26
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-48-13/26
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-13_26/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-48-50/100
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-48-50/100
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-48-50_100/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-50/100
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-50/100
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/250
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/250
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/250-O
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/250-O
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250-O/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/300
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/300
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/300-O
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/300-O
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300-O/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/425
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/425
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/425-O
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/425-O
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_425-O/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-230-5/15
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-230-5/15
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-230-5_15/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-320-5/10
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_11">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-320-5/10
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_10/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_12" id="__nav_2_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-320-5/15
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_12">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-320-5/15
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-320-5_15/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-400-3/9
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-400-3/9
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-3_9/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_14" id="__nav_2_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-400-7/15
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_14">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-400-7/15
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-7_15/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_15" id="__nav_2_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-400-10/20
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_15">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-400-10/20
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-10_20/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_16" id="__nav_2_16_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-400-14/30
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_16">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-400-14/30
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-400-14_30/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_17" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_17" id="__nav_2_17_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-560-3/9
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_17">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-560-3/9
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-3_9/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_18" id="__nav_2_18_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-560-7/15
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_18">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-560-7/15
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-7_15/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_19" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_19" id="__nav_2_19_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-560-10/20
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_19_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_19">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-560-10/20
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-10_20/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_20" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_20" id="__nav_2_20_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-D-560-30/50
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_20_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_20">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-D-560-30/50
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-D-560-30_50/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_21" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_21" id="__nav_2_21_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-50/100 RI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_21_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_21">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-50/100 RI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-50_100RI/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_22" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_22" id="__nav_2_22_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/250 RI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_22_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_22">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/250 RI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_250RI/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_23" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_23" id="__nav_2_23_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ-S-48-100/300 RI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_23_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_23">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ-S-48-100/300 RI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/firmware.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ-S-48-100_300RI/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_24" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_24" id="__nav_2_24_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Společný HW
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_24_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_24">
+            <span class="md-nav__icon md-icon"></span>
+            Společný HW
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/LED/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stavová a chybová hlášení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_DI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Digitální vstupy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_DO.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Digitální výstupy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_AI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analogové vstupy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_CAN.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sběrnice CAN
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_FBE.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zpětná vazba FBE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/commonHW_FB12.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zpětná vazba FB1, FB2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/SD/md/SD.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SD karty
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_25" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_25" id="__nav_2_25_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Řízení a regulace
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_25_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_25">
+            <span class="md-nav__icon md-icon"></span>
+            Řízení a regulace
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REG/md/TGZstructure.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regulační struktura
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REG/md/MotorSettings.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nastavení parametrů
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REG/md/PG.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Profile generator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REG/md/AuxFunc.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Další funkce
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../REG/md/ESTOP.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nouzové zabrždění
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_26" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_26" id="__nav_2_26_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ GUI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_26_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_26">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ GUI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalace a spuštění
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/connection.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Připojení k TGZ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/parameters.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nastavení parametrů
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/osc.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Osciloskop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/FW.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Přehrávání firmware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGZ/TGZ_SW/GUI/md/userProg.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Uživatelský program
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGS
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            TGS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGS-320-10/15
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            TGS-320-10/15
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-320-10_15/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGS-560-25/50
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            TGS-560-25/50
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-25_50/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGS-560-50/100
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            TGS-560-50/100
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/mark.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis zařízení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/electric.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrická instalace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGS/TGS-560-50_100/md/safe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bezpečnost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGM
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            TGM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGMmini
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            TGMmini
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMmini/md/basic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMmini/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMmini/md/connectors.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis konektorů
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMmini/md/linux.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMmini/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMmini/md/mounting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Montáž
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMmini/md/schematic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Příklad zapojení
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGMcontroller
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            TGMcontroller
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMcontroller/md/basic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMcontroller/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMcontroller/md/connectors.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis konektorů
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMcontroller/md/dimension.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rozměry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMcontroller/md/software.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGZ+Motion
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            TGZ+Motion
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGZpMotion/md/basic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGZpMotion/md/param.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGZpMotion/md/connectors.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis konektorů
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGZpMotion/md/TGZ.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Servozesilovač TGZ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGZpMotion/md/software.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    SW/FW
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            SW/FW
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    EtherCAT
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            EtherCAT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECAT/md/intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECAT/md/packet.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis komunikace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECAT/md/network.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nastavení sítě
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECAT/md/EtherCAT.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sběrnice EtherCAT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECAT/md/objects.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Katalog objektů
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECAT/md/twinCAT.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TGZ a TwinCAT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ECAT/md/codesys.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codesys
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Profinet RT
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Profinet RT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="general.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obecné
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="network.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nastavení sítě
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TIA.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TIA portál
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PROFIdrive
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="profidrive.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    PROFIdrive
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Obsah">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Obsah
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parametry-pohonu-profidrive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parametry pohonu PROFIdrive
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#podporovane-standardni-jednotky-profidrive-pnu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Podporované standardní jednotky PROFIdrive PNU
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencni-hodnoty-pnu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referenční hodnoty PNU
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dalsi-parametry-profidrive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Další parametry PROFIdrive
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registry-tgz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registry TGZ
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    EtherNET UDP
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            EtherNET UDP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENET/md/intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENET/md/packet.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis komunikace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CAN
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            CAN
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CAN/md/intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Základní informace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CAN/md/settings.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Popis komunikace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TGMotion
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            TGMotion
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMotion/md/PLC.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PLC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMotion/md/HW.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hardware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMotion/md/interpolator.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interpolátor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../TGM/TGMotion/md/osc.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Osciloskop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Ostatní
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Ostatní
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ETC/TGHall/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TGHall
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ETC/TGcable/md/description.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Schémata kabelů
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../source/md/cert.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Certifikáty
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>PROFIdrive</h1>
+
+<h2 id="parametry-pohonu-profidrive">Parametry pohonu PROFIdrive<a class="headerlink" href="#parametry-pohonu-profidrive" title="Permanent link">&para;</a></h2>
+<p>Servopohon TGZ podporuje přístup k parametrům prostřednictvím slotů 1 a 2 (slot 2 pouze pro variantu se dvěma osami).
+Pro přístup k parametrům TGZ lze použít tři indexy datových objektů záznamu:</p>
+<ul>
+<li><code>47</code> - údaje ze starších záznamů. Osa je uvedena přímo v záhlaví požadavku.</li>
+<li><code>0xB02E</code> - přístup k lokálním základním parametrům. Osa je určena slotem, který provádí přístup.</li>
+<li><code>0xB02F</code> - přístup ke globálním základním parametrům. Osa je uvedena přímo v hlavičce požadavku.</li>
+</ul>
+<h2 id="podporovane-standardni-jednotky-profidrive-pnu">Podporované standardní jednotky PROFIdrive PNU<a class="headerlink" href="#podporovane-standardni-jednotky-profidrive-pnu" title="Permanent link">&para;</a></h2>
+<p>Servopohon TGZ podporuje následující standardní a povinné parametry PROFIdrive (PNU):</p>
+<table>
+<thead>
+<tr>
+<th>Číslo</th>
+<th>Popis</th>
+<th>Datový typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>922</td>
+<td>Výběr telegramu</td>
+<td>Unsigned16</td>
+</tr>
+<tr>
+<td>930</td>
+<td>Provozní režim</td>
+<td>Unsigned16</td>
+</tr>
+<tr>
+<td>944</td>
+<td>Počítadlo chybových zpráv</td>
+<td>Unsigned16</td>
+</tr>
+<tr>
+<td>947</td>
+<td>Číslo chyby</td>
+<td>Pole Unsigned16</td>
+</tr>
+<tr>
+<td>964</td>
+<td>Identifikace jednotky</td>
+<td>Struktura</td>
+</tr>
+<tr>
+<td>965</td>
+<td>Identifikace režimu</td>
+<td>Struktura</td>
+</tr>
+<tr>
+<td>975</td>
+<td>Identifikace objektu jednotky</td>
+<td>Struktura</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Popis standardních parametrů PROFIdrive naleznete v dokumentaci PROFIdrive. PNU 922, 930, 944 a 947 jsou pro každou osu jedinečné.</p>
+</div>
+<h2 id="referencni-hodnoty-pnu">Referenční hodnoty PNU<a class="headerlink" href="#referencni-hodnoty-pnu" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Číslo</th>
+<th>Popis</th>
+<th>Datový typ</th>
+<th>Název registru TGZ</th>
+<th>Registrační číslo TGZ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2000</td>
+<td>Referenční rychlost</td>
+<td>Float32</td>
+<td>M-Nn</td>
+<td>0x2118, 0x2218</td>
+</tr>
+<tr>
+<td>2001</td>
+<td>Referenční napětí</td>
+<td>Float32</td>
+<td>M-Un</td>
+<td>0x2117, 0x2217</td>
+</tr>
+<tr>
+<td>2002</td>
+<td>Referenční proud</td>
+<td>Float32</td>
+<td>M-In</td>
+<td>0x211B, 0x221B</td>
+</tr>
+<tr>
+<td>2003</td>
+<td>Referenční točivý moment</td>
+<td>Float32</td>
+<td>M-Mn</td>
+<td>0x2119, 0x2219</td>
+</tr>
+<tr>
+<td>2007</td>
+<td>Referenční zrychlení</td>
+<td>Float32</td>
+<td>PG-PD_Acc</td>
+<td>0x395E, 0x3A5E</td>
+</tr>
+</tbody>
+</table>
+<p>Výše uvedené parametry jsou pro každou osu jedinečné.
+Použijte příslušný identifikátor osy spolu s indexem datového objektu.</p>
+<h2 id="dalsi-parametry-profidrive">Další parametry PROFIdrive<a class="headerlink" href="#dalsi-parametry-profidrive" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Číslo</th>
+<th>Popis</th>
+<th>Datový typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2583</td>
+<td>Kompenzace vůle</td>
+<td>Signed32</td>
+</tr>
+</tbody>
+</table>
+<p>Čísla parametrů od <code>2010</code> do <code>8191</code> jsou vyhrazena pro budoucí rozšíření firmwaru.
+PNU <code>2583</code> se používají pro kompenzaci vůle a jsou jedinečné pro každou osu.</p>
+<h2 id="registry-tgz">Registry TGZ<a class="headerlink" href="#registry-tgz" title="Permanent link">&para;</a></h2>
+<p>Všechny registry TGZ jsou přístupné jako specifické registry PROFIdrive výrobce, počínaje číslem <code>0x2000</code> (<code>16#2000</code>, tj. <code>8192 DEC</code>).
+Seznam použitelných registrů lze stáhnout z webových stránek TG Drives.
+Všechny parametry TGZ jsou seskupeny dohromady.
+Existuje několik skupin - společné, motor, pohon, generátor profilů atd.
+Skupiny jsou číslovány od nuly, stejně jako parametry ve skupině.
+První dvě hexadecimální čísla tvoří číslo skupiny, <code>0x2000</code> je první skupina.
+Poslední dvě hexadecimální čísla určují index parametru v rámci skupiny.
+Například číslo parametru <code>0x2119</code> patří do skupiny 1 (Motor) a jeho index je 25 (<code>0x19 = 16#19 = 25 DEC</code>).
+Jednoosá varianta TGZ nepoužívá parametry osy 2.
+Pro přístup k parametrům prostřednictvím sítě PROFINET je k úplnému určení správného parametru zapotřebí pouze číslo parametru.
+Položka osy v hlavičce zprávy <strong>PROFIdrive request</strong> je ignorována.   </p>
+<p>Všechny registry TGZ jsou vždy 32bitové integer hodnoty.</p>
+<table>
+<thead>
+<tr>
+<th>Číslo skupiny</th>
+<th>Název</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x2000</td>
+<td>Společné</td>
+</tr>
+<tr>
+<td>0x2100</td>
+<td>Motor, osa 1</td>
+</tr>
+<tr>
+<td>0x2200</td>
+<td>Motor, osa 2</td>
+</tr>
+<tr>
+<td>0x2300</td>
+<td>Drive, osa 1</td>
+</tr>
+<tr>
+<td>0x2400</td>
+<td>Drive, osa 2</td>
+</tr>
+<tr>
+<td>0x2500</td>
+<td>Proudový regulátor, osa 1</td>
+</tr>
+<tr>
+<td>0x2600</td>
+<td>Proudový regulátor, osa 2</td>
+</tr>
+<tr>
+<td>0x2700</td>
+<td>Regulátor rychlosti, osa 1</td>
+</tr>
+<tr>
+<td>0x2800</td>
+<td>Regulátor rychlosti, osa 2</td>
+</tr>
+<tr>
+<td>0x2900</td>
+<td>Regulátor polohy, osa 1</td>
+</tr>
+<tr>
+<td>0x2A00</td>
+<td>Regulátor polohy, osa 2</td>
+</tr>
+<tr>
+<td>0x2B00</td>
+<td>Zpětná vazba, osa 1</td>
+</tr>
+<tr>
+<td>0x2C00</td>
+<td>Zpětná vazba, osa 2</td>
+</tr>
+<tr>
+<td>0x3100</td>
+<td>Command, osa 1</td>
+</tr>
+<tr>
+<td>0x3200</td>
+<td>Command, osa 2</td>
+</tr>
+<tr>
+<td>0x3300</td>
+<td>Monitorování, osa 1</td>
+</tr>
+<tr>
+<td>0x3400</td>
+<td>Monitorování, osa 2</td>
+</tr>
+<tr>
+<td>0x3900</td>
+<td>Profile generator, osa 1</td>
+</tr>
+<tr>
+<td>0x3A00</td>
+<td>Profile generator, osa 2</td>
+</tr>
+</tbody>
+</table>
+<p>Parametry související s PROFINET jsou přístupné pomocí indexových čísel parametrů TGZ:</p>
+<table>
+<thead>
+<tr>
+<th>Název parametru TGZ</th>
+<th>Název PROFINET</th>
+<th>Popis</th>
+<th>Číslo pro osu 1</th>
+<th>Číslo pro osu 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PD_TelegramNumber</td>
+<td>Výběr telegramu (PNU922)</td>
+<td></td>
+<td>0x2321</td>
+<td>0x2421</td>
+</tr>
+<tr>
+<td>PD_DisplayInfo</td>
+<td>Zobrazení ladicích zpráv</td>
+<td>Zobrazení ladicích zpráv na výstupu grafického rozhraní TGZ</td>
+<td>0x2323</td>
+<td>NEUPLATŇUJE SE</td>
+</tr>
+<tr>
+<td>PD_SetDataCounter</td>
+<td></td>
+<td>Počítá cyklické zprávy PROFINET z řadiče I/O</td>
+<td>0x2324</td>
+<td>0x2424</td>
+</tr>
+<tr>
+<td>PD_StatusWord_ZSW1</td>
+<td>Stavové slovo 1 (ZSW1)</td>
+<td>Kopie stavového slova PROFIdrive odeslaná do řadiče I/O</td>
+<td>0x3500</td>
+<td>0x3600</td>
+</tr>
+<tr>
+<td>PD_ControlWord_STW1</td>
+<td>Řídicí slovo 1 (STW1)</td>
+<td></td>
+<td>0x3501</td>
+<td>0x3601</td>
+</tr>
+<tr>
+<td>PD_SATZANW</td>
+<td>SATZANW</td>
+<td>Výběr bloku procházení</td>
+<td>0x3503</td>
+<td>0x3603</td>
+</tr>
+<tr>
+<td>PD_AKTSATZ</td>
+<td>AKTSATZ</td>
+<td>Skutečný procházející blok</td>
+<td>0x3504</td>
+<td>0x3604</td>
+</tr>
+<tr>
+<td>PD_State</td>
+<td></td>
+<td>Režim stavového diagramu</td>
+<td>0x3505</td>
+<td>0x3605</td>
+</tr>
+</tbody>
+</table>
+<p>TGZ podporuje až 10 bloků pro nezávislé použití.
+Každý blok se skládá z režimu, zrychlení, zpomalení, rychlosti a cílové polohy:   </p>
+<p>PD_Task1</p>
+<table>
+<thead>
+<tr>
+<th>Název</th>
+<th>Popis</th>
+<th>Číslo pro osu 1</th>
+<th>Číslo pro osu 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mod</td>
+<td>Režim (0 - relativní, 1 - absolutní)</td>
+<td>0x3922</td>
+<td>0x3A22</td>
+</tr>
+<tr>
+<td>acc</td>
+<td>Zrychlení</td>
+<td>0x3923</td>
+<td>0x3A23</td>
+</tr>
+<tr>
+<td>dec</td>
+<td>Zpomalení</td>
+<td>0x3924</td>
+<td>0x3A24</td>
+</tr>
+<tr>
+<td>rychlost</td>
+<td>Rychlost</td>
+<td>0x3925</td>
+<td>0x3A25</td>
+</tr>
+<tr>
+<td>tarPosAngle</td>
+<td>Cílová poloha - úhel</td>
+<td>0x3926</td>
+<td>0x3A26</td>
+</tr>
+<tr>
+<td>tarPosRevol</td>
+<td>Cílová poloha - otáčky</td>
+<td>0x3927</td>
+<td>0x3A27</td>
+</tr>
+</tbody>
+</table>
+<p>PD_Task2 - Čísla parametrů jsou <code>0x3928</code> - <code>0x392D</code> pro osu 1 a <code>0x3A28</code> - <code>0x3A2D</code> pro osu 2. <br />
+PD_Task3 - Čísla parametrů jsou <code>0x392E</code> - <code>0x3933</code> pro osu 1 a <code>0x3A2E</code> - <code>0x3A33</code> pro osu 2. <br />
+PD_Task4 - Čísla parametrů jsou <code>0x3934</code> - <code>0x3939</code> pro osu 1 a <code>0x3A34</code> - <code>0x3A39</code> pro osu 2. <br />
+PD_Task5 - Čísla parametrů jsou <code>0x393A</code> - <code>0x393F</code> pro osu 1 a <code>0x3A3A</code> - <code>0x3A3F</code> pro osu 2. <br />
+PD_Task6 - Čísla parametrů jsou <code>0x3940</code> - <code>0x3945</code> pro osu 1 a <code>0x3A40</code> - <code>0x3A45</code> pro osu 2. <br />
+PD_Task7 - Čísla parametrů jsou <code>0x3946</code> - <code>0x394B</code> pro osu 1 a <code>0x3A46</code> - <code>0x3A4B</code> pro osu 2. <br />
+PD_Task8 - Čísla parametrů jsou <code>0x394C</code> - <code>0x3951</code> pro osu 1 a <code>0x3A4C</code> - <code>0x3A51</code> pro osu 2. <br />
+PD_Task9 - Čísla parametrů jsou <code>0x3952</code> - <code>0x3957</code> pro osu 1 a <code>0x3A52</code> - <code>0x3A57</code> pro osu 2. <br />
+PD_Task10 - Čísla parametrů jsou <code>0x3958</code> - <code>0x395D</code> pro osu 1 a <code>0x3A58</code> - <code>0x3A5D</code> pro osu 2.   </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Zpět na začátek
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 TG Drives, s.r.o.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.path", "navigation.top", "toc.integrate", "search.highlight", "header.autohide", "content.footnote.tooltips", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Zkop\u00edrov\u00e1no do schr\u00e1nky", "clipboard.copy": "Kop\u00edrovat do schr\u00e1nky", "search.result.more.one": "1 dal\u0161\u00ed na t\u00e9to str\u00e1nce", "search.result.more.other": "# v\u00edce na t\u00e9to str\u00e1nce", "search.result.none": "Nenalezeny \u017e\u00e1dn\u00e9 dokumenty", "search.result.one": "Nalezen\u00fd dokument: 1", "search.result.other": "Nalezen\u00e9 dokumenty: #", "search.result.placeholder": "Pi\u0161te co se m\u00e1 vyhledat", "search.result.term.missing": "Chyb\u011bj\u00edc\u00ed", "select.version": "Vyberte verzi"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

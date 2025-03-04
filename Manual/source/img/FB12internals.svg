@@ -1,0 +1,1887 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1108" height="488"> <style xmlns="http://www.w3.org/1999/xhtml">
+        
+ .M athJax_Hover_Frame {
+ border-radius: .25em;
+
+        -webkit-border-radius: .25em;
+ -moz-border-radius: .25em;
+
+        -khtml-border-radius: .25em;
+ box-shadow: 0px 0px 15px #83A;
+
+        -webkit-box-shadow: 0px 0px 15px #83A;
+ -moz-box-shadow: 0px 0px
+        15px #83A;
+ -khtml-box-shadow: 0px 0px 15px #83A;
+ border: 1px
+        solid #A6D ! important;
+ display: inline-block;
+ position:
+        absolute
+ }
+
+ .MathJax_Menu_Button .MathJax_Hover_Arrow {
+
+        position: absolute;
+ cursor: pointer;
+ display: inline-block;
+
+        border: 2px solid #AAA;
+ border-radius: 4px;
+
+        -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+
+        -khtml-border-radius: 4px;
+ font-family: 'Courier New',
+        Courier;
+ font-size: 9px;
+ color: #F0F0F0
+ }
+
+
+        .MathJax_Menu_Button .MathJax_Hover_Arrow span {
+ display: block;
+
+        background-color: #AAA;
+ border: 1px solid;
+ border-radius:
+        3px;
+ line-height: 0;
+ padding: 4px
+ }
+
+
+        .MathJax_Hover_Arrow:hover {
+ color: white !important;
+ border:
+        2px solid #CCC !important
+ }
+
+ .MathJax_Hover_Arrow:hover
+        span {
+ background-color: #CCC !important
+ }
+
+
+
+        #MathJax_About {
+ position: fixed;
+ left: 50%;
+ width:
+        auto;
+ text-align: center;
+ border: 3px outset;
+ padding:
+        1em 2em;
+ background-color: #DDDDDD;
+ color: black;
+
+        cursor: default;
+ font-family: message-box;
+ font-size: 120%;
+
+        font-style: normal;
+ text-indent: 0;
+ text-transform: none;
+
+        line-height: normal;
+ letter-spacing: normal;
+ word-spacing:
+        normal;
+ word-wrap: normal;
+ white-space: nowrap;
+ float:
+        none;
+ z-index: 201;
+ border-radius: 15px;
+
+        -webkit-border-radius: 15px;
+ -moz-border-radius: 15px;
+
+        -khtml-border-radius: 15px;
+ box-shadow: 0px 10px 20px #808080;
+
+        -webkit-box-shadow: 0px 10px 20px #808080;
+ -moz-box-shadow: 0px
+        10px 20px #808080;
+ -khtml-box-shadow: 0px 10px 20px #808080;
+
+        filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2,
+        Color='gray', Positive='true')
+ }
+
+
+        #MathJax_About.MathJax_MousePost {
+ outline: none
+ }
+
+
+        .MathJax_Menu {
+ position: absolute;
+ background-color: white;
+
+        color: black;
+ width: auto;
+ padding: 2px;
+ border: 1px
+        solid #CCCCCC;
+ margin: 0;
+ cursor: default;
+ font: menu;
+
+        text-align: left;
+ text-indent: 0;
+ text-transform: none;
+
+        line-height: normal;
+ letter-spacing: normal;
+ word-spacing:
+        normal;
+ word-wrap: normal;
+ white-space: nowrap;
+ float:
+        none;
+ z-index: 201;
+ box-shadow: 0px 10px 20px #808080;
+
+        -webkit-box-shadow: 0px 10px 20px #808080;
+ -moz-box-shadow: 0px
+        10px 20px #808080;
+ -khtml-box-shadow: 0px 10px 20px #808080;
+
+        filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2,
+        Color='gray', Positive='true')
+ }
+
+
+        .MathJax_MenuItem {
+ padding: 2px 2em;
+ background: transparent
+
+        }
+
+ .MathJax_MenuArrow {
+ position: absolute;
+ right:
+        .5em;
+ padding-top: .25em;
+ color: #666666;
+ font-size:
+        .75em
+ }
+
+ .MathJax_MenuActive .MathJax_MenuArrow {
+
+        color: white
+ }
+
+ .MathJax_MenuArrow.RTL {
+ left: .5em;
+
+        right: auto
+ }
+
+ .MathJax_MenuCheck {
+ position:
+        absolute;
+ left: .7em
+ }
+
+ .MathJax_MenuCheck.RTL {
+
+        right: .7em;
+ left: auto
+ }
+
+ .MathJax_MenuRadioCheck {
+
+        position: absolute;
+ left: 1em
+ }
+
+
+        .MathJax_MenuRadioCheck.RTL {
+ right: 1em;
+ left: auto
+ }
+
+
+        .MathJax_MenuLabel {
+ padding: 2px 2em 4px 1.33em;
+ font-style:
+        italic
+ }
+
+ .MathJax_MenuRule {
+ border-top: 1px solid
+        #CCCCCC;
+ margin: 4px 1px 0px
+ }
+
+
+        .MathJax_MenuDisabled {
+ color: GrayText
+ }
+
+
+        .MathJax_MenuActive {
+ background-color: Highlight;
+ color:
+        HighlightText
+ }
+
+ .MathJax_MenuDisabled:focus,
+        .MathJax_MenuLabel:focus {
+ background-color: #E8E8E8
+ }
+
+
+        .MathJax_ContextMenu:focus {
+ outline: none
+ }
+
+
+        .MathJax_ContextMenu .MathJax_MenuItem:focus {
+ outline: none
+
+        }
+
+ #MathJax_AboutClose {
+ top: .2em;
+ right: .2em
+
+        }
+
+ .MathJax_Menu .MathJax_MenuClose {
+ top: -10px;
+
+        left: -10px
+ }
+
+ .MathJax_MenuClose {
+ position:
+        absolute;
+ cursor: pointer;
+ display: inline-block;
+
+        border: 2px solid #AAA;
+ border-radius: 18px;
+
+        -webkit-border-radius: 18px;
+ -moz-border-radius: 18px;
+
+        -khtml-border-radius: 18px;
+ font-family: 'Courier New',
+        Courier;
+ font-size: 24px;
+ color: #F0F0F0
+ }
+
+
+        .MathJax_MenuClose span {
+ display: block;
+ background-color:
+        #AAA;
+ border: 1.5px solid;
+ border-radius: 18px;
+
+        -webkit-border-radius: 18px;
+ -moz-border-radius: 18px;
+
+        -khtml-border-radius: 18px;
+ line-height: 0;
+ padding: 8px 0
+        6px
+ }
+
+ .MathJax_MenuClose:hover {
+ color: white
+        !important;
+ border: 2px solid #CCC !important
+ }
+
+
+        .MathJax_MenuClose:hover span {
+ background-color: #CCC !important
+
+        }
+
+ .MathJax_MenuClose:hover:focus {
+ outline: none
+ }
+
+
+        .MathJax_Preview .MJXf-math {
+ color: inherit !important
+ }
+
+
+        .MJX_Assistive_MathML {
+ position: absolute !important;
+ top:
+        0;
+ left: 0;
+ clip: rect(1px, 1px, 1px, 1px);
+ padding: 1px
+        0 0 0 !important;
+ border: 0 !important;
+ height: 1px
+        !important;
+ width: 1px !important;
+ overflow: hidden
+        !important;
+ display: block !important;
+ -webkit-touch-callout:
+        none;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+
+        -moz-user-select: none;
+ -ms-user-select: none;
+ user-select:
+        none
+ }
+
+ .MJX_Assistive_MathML.MJX_Assistive_MathML_Block
+        {
+ width: 100% !important
+ }
+
+ #MathJax_Zoom {
+
+        position: absolute;
+ background-color: #F0F0F0;
+ overflow:
+        auto;
+ display: block;
+ z-index: 301;
+ padding: .5em;
+
+        border: 1px solid black;
+ margin: 0;
+ font-weight: normal;
+
+        font-style: normal;
+ text-align: left;
+ text-indent: 0;
+
+        text-transform: none;
+ line-height: normal;
+ letter-spacing:
+        normal;
+ word-spacing: normal;
+ word-wrap: normal;
+
+        white-space: nowrap;
+ float: none;
+ -webkit-box-sizing:
+        content-box;
+ -moz-box-sizing: content-box;
+ box-sizing:
+        content-box;
+ box-shadow: 5px 5px 15px #AAAAAA;
+
+        -webkit-box-shadow: 5px 5px 15px #AAAAAA;
+ -moz-box-shadow: 5px 5px
+        15px #AAAAAA;
+ -khtml-box-shadow: 5px 5px 15px #AAAAAA;
+
+        filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2,
+        Color='gray', Positive='true')
+ }
+
+
+        #MathJax_ZoomOverlay {
+ position: absolute;
+ left: 0;
+ top:
+        0;
+ z-index: 300;
+ display: inline-block;
+ width: 100%;
+
+        height: 100%;
+ border: 0;
+ padding: 0;
+ margin: 0;
+
+        background-color: white;
+ opacity: 0;
+ filter: alpha(opacity=0)
+
+        }
+
+ #MathJax_ZoomFrame {
+ position: relative;
+ display:
+        inline-block;
+ height: 0;
+ width: 0
+ }
+
+
+        #MathJax_ZoomEventTrap {
+ position: absolute;
+ left: 0;
+
+        top: 0;
+ z-index: 302;
+ display: inline-block;
+ border: 0;
+
+        padding: 0;
+ margin: 0;
+ background-color: white;
+ opacity:
+        0;
+ filter: alpha(opacity=0)
+ }
+
+ .MathJax_Preview {
+
+        color: #888
+ }
+
+ #MathJax_Message {
+ position: fixed;
+
+        left: 1em;
+ bottom: 1.5em;
+ background-color: #E6E6E6;
+
+        border: 1px solid #959595;
+ margin: 0px;
+ padding: 2px 8px;
+
+        z-index: 102;
+ color: black;
+ font-size: 80%;
+ width: auto;
+
+        white-space: nowrap
+ }
+
+ #MathJax_MSIE_Frame {
+
+        position: absolute;
+ top: 0;
+ left: 0;
+ width: 0px;
+
+        z-index: 101;
+ border: 0px;
+ margin: 0px;
+ padding: 0px
+
+        }
+
+ .MathJax_Error {
+ color: #CC0000;
+ font-style:
+        italic
+ }
+
+ .MJXp-script {
+ font-size: .8em
+ }
+
+
+        .MJXp-right {
+ -webkit-transform-origin: right;
+
+        -moz-transform-origin: right;
+ -ms-transform-origin: right;
+
+        -o-transform-origin: right;
+ transform-origin: right
+ }
+
+
+        .MJXp-bold {
+ font-weight: bold
+ }
+
+ .MJXp-italic {
+
+        font-style: italic
+ }
+
+ .MJXp-scr {
+ font-family:
+        MathJax_Script, 'Times New Roman', Times, STIXGeneral, serif
+
+        }
+
+ .MJXp-frak {
+ font-family: MathJax_Fraktur, 'Times
+        New Roman', Times, STIXGeneral, serif
+ }
+
+ .MJXp-sf {
+
+        font-family: MathJax_SansSerif, 'Times New Roman', Times,
+        STIXGeneral, serif
+ }
+
+ .MJXp-cal {
+ font-family:
+        MathJax_Caligraphic, 'Times New Roman', Times, STIXGeneral,
+        serif
+ }
+
+ .MJXp-mono {
+ font-family:
+        MathJax_Typewriter, 'Times New Roman', Times, STIXGeneral,
+        serif
+ }
+
+ .MJXp-largeop {
+ font-size: 150%
+ }
+
+
+        .MJXp-largeop.MJXp-int {
+ vertical-align: -.2em
+ }
+
+
+        .MJXp-math {
+ display: inline-block;
+ line-height: 1.2;
+
+        text-indent: 0;
+ font-family: 'Times New Roman', Times,
+        STIXGeneral, serif;
+ white-space: nowrap;
+ border-collapse:
+        collapse
+ }
+
+ .MJXp-display {
+ display: block;
+
+        text-align: center;
+ margin: 1em 0
+ }
+
+ .MJXp-math span
+        {
+ display: inline-block
+ }
+
+ .MJXp-box {
+ display:
+        block !important;
+ text-align: center
+ }
+
+
+        .MJXp-box:after {
+ content: " "
+ }
+
+ .MJXp-rule {
+
+        display: block !important;
+ margin-top: .1em
+ }
+
+
+        .MJXp-char {
+ display: block !important
+ }
+
+ .MJXp-mo {
+
+        margin: 0 .15em
+ }
+
+ .MJXp-mfrac {
+ margin: 0 .125em;
+
+        vertical-align: .25em
+ }
+
+ .MJXp-denom {
+ display:
+        inline-table !important;
+ width: 100%
+ }
+
+ .MJXp-denom&gt;
+        * {
+ display: table-row !important
+ }
+
+ .MJXp-surd {
+
+        vertical-align: top
+ }
+
+ .MJXp-surd&gt; * {
+ display:
+        block !important
+ }
+
+ .MJXp-script-box&gt; * {
+
+        display: table !important;
+ height: 50%
+ }
+
+
+        .MJXp-script-box&gt; *&gt; * {
+ display: table-cell !important;
+
+        vertical-align: top
+ }
+
+ .MJXp-script-box&gt; *:last-child&gt;
+        * {
+ vertical-align: bottom
+ }
+
+ .MJXp-script-box&gt; *&gt;
+        *&gt; * {
+ display: block !important
+ }
+
+
+        .MJXp-mphantom {
+ visibility: hidden
+ }
+
+
+        .MJXp-munderover, .MJXp-munder {
+ display: inline-table !important
+
+        }
+
+ .MJXp-over {
+ display: inline-block !important;
+
+        text-align: center
+ }
+
+ .MJXp-over&gt; * {
+ display:
+        block !important
+ }
+
+ .MJXp-munderover&gt; *, .MJXp-munder&gt;
+        * {
+ display: table-row !important
+ }
+
+ .MJXp-mtable {
+
+        vertical-align: .25em;
+ margin: 0 .125em
+ }
+
+
+        .MJXp-mtable&gt; * {
+ display: inline-table !important;
+
+        vertical-align: middle
+ }
+
+ .MJXp-mtr {
+ display:
+        table-row !important
+ }
+
+ .MJXp-mtd {
+ display:
+        table-cell !important;
+ text-align: center;
+ padding: .5em 0 0
+        .5em
+ }
+
+ .MJXp-mtr&gt; .MJXp-mtd:first-child {
+
+        padding-left: 0
+ }
+
+ .MJXp-mtr:first-child&gt; .MJXp-mtd {
+
+        padding-top: 0
+ }
+
+ .MJXp-mlabeledtr {
+ display:
+        table-row !important
+ }
+
+ .MJXp-mlabeledtr&gt;
+        .MJXp-mtd:first-child {
+ padding-left: 0
+ }
+
+
+        .MJXp-mlabeledtr:first-child&gt; .MJXp-mtd {
+ padding-top: 0
+ }
+
+
+        .MJXp-merror {
+ background-color: #FFFF88;
+ color: #CC0000;
+
+        border: 1px solid #CC0000;
+ padding: 1px 3px;
+ font-style:
+        normal;
+ font-size: 90%
+ }
+
+ .MJXp-scale0 {
+
+        -webkit-transform: scaleX(.0);
+ -moz-transform: scaleX(.0);
+
+        -ms-transform: scaleX(.0);
+ -o-transform: scaleX(.0);
+
+        transform: scaleX(.0)
+ }
+
+ .MJXp-scale1 {
+
+        -webkit-transform: scaleX(.1);
+ -moz-transform: scaleX(.1);
+
+        -ms-transform: scaleX(.1);
+ -o-transform: scaleX(.1);
+
+        transform: scaleX(.1)
+ }
+
+ .MJXp-scale2 {
+
+        -webkit-transform: scaleX(.2);
+ -moz-transform: scaleX(.2);
+
+        -ms-transform: scaleX(.2);
+ -o-transform: scaleX(.2);
+
+        transform: scaleX(.2)
+ }
+
+ .MJXp-scale3 {
+
+        -webkit-transform: scaleX(.3);
+ -moz-transform: scaleX(.3);
+
+        -ms-transform: scaleX(.3);
+ -o-transform: scaleX(.3);
+
+        transform: scaleX(.3)
+ }
+
+ .MJXp-scale4 {
+
+        -webkit-transform: scaleX(.4);
+ -moz-transform: scaleX(.4);
+
+        -ms-transform: scaleX(.4);
+ -o-transform: scaleX(.4);
+
+        transform: scaleX(.4)
+ }
+
+ .MJXp-scale5 {
+
+        -webkit-transform: scaleX(.5);
+ -moz-transform: scaleX(.5);
+
+        -ms-transform: scaleX(.5);
+ -o-transform: scaleX(.5);
+
+        transform: scaleX(.5)
+ }
+
+ .MJXp-scale6 {
+
+        -webkit-transform: scaleX(.6);
+ -moz-transform: scaleX(.6);
+
+        -ms-transform: scaleX(.6);
+ -o-transform: scaleX(.6);
+
+        transform: scaleX(.6)
+ }
+
+ .MJXp-scale7 {
+
+        -webkit-transform: scaleX(.7);
+ -moz-transform: scaleX(.7);
+
+        -ms-transform: scaleX(.7);
+ -o-transform: scaleX(.7);
+
+        transform: scaleX(.7)
+ }
+
+ .MJXp-scale8 {
+
+        -webkit-transform: scaleX(.8);
+ -moz-transform: scaleX(.8);
+
+        -ms-transform: scaleX(.8);
+ -o-transform: scaleX(.8);
+
+        transform: scaleX(.8)
+ }
+
+ .MJXp-scale9 {
+
+        -webkit-transform: scaleX(.9);
+ -moz-transform: scaleX(.9);
+
+        -ms-transform: scaleX(.9);
+ -o-transform: scaleX(.9);
+
+        transform: scaleX(.9)
+ }
+
+ .MathJax_PHTML .noError {
+
+        vertical-align: ;
+ font-size: 90%;
+ text-align: left;
+
+        color: black;
+ padding: 1px 3px;
+ border: 1px solid
+ }
+
+
+        .mjx-chtml {
+ display: inline-block;
+ line-height: 0;
+
+        text-indent: 0;
+ text-align: left;
+ text-transform: none;
+
+        font-style: normal;
+ font-weight: normal;
+ font-size: 100%;
+
+        font-size-adjust: none;
+ letter-spacing: normal;
+ word-wrap:
+        normal;
+ word-spacing: normal;
+ white-space: nowrap;
+
+        float: none;
+ direction: ltr;
+ max-width: none;
+
+        max-height: none;
+ min-width: 0;
+ min-height: 0;
+ border:
+        0;
+ margin: 0;
+ padding: 1px 0
+ }
+
+ .MJXc-display {
+
+        display: block;
+ text-align: center;
+ margin: 1em 0;
+
+        padding: 0
+ }
+
+ .mjx-chtml[tabindex]:focus, body :focus
+        .mjx-chtml[tabindex] {
+ display: inline-table
+ }
+
+
+        .mjx-full-width {
+ text-align: center;
+ display: table-cell
+        !important;
+ width: 10000em
+ }
+
+ .mjx-math {
+
+        display: inline-block;
+ border-collapse: separate;
+
+        border-spacing: 0
+ }
+
+ .mjx-math * {
+ display:
+        inline-block;
+ -webkit-box-sizing: content-box !important;
+
+        -moz-box-sizing: content-box !important;
+ box-sizing: content-box
+        !important;
+ text-align: left
+ }
+
+ .mjx-numerator {
+
+        display: block;
+ text-align: center
+ }
+
+
+        .mjx-denominator {
+ display: block;
+ text-align: center
+ }
+
+
+        .MJXc-stacked {
+ height: 0;
+ position: relative
+ }
+
+
+        .MJXc-stacked&gt; * {
+ position: absolute
+ }
+
+
+        .MJXc-bevelled&gt; * {
+ display: inline-block
+ }
+
+
+        .mjx-stack {
+ display: inline-block
+ }
+
+ .mjx-op {
+
+        display: block
+ }
+
+ .mjx-under {
+ display: table-cell
+
+        }
+
+ .mjx-over {
+ display: block
+ }
+
+ .mjx-over&gt;
+        * {
+ padding-left: 0px !important;
+ padding-right: 0px
+        !important
+ }
+
+ .mjx-under&gt; * {
+ padding-left: 0px
+        !important;
+ padding-right: 0px !important
+ }
+
+
+        .mjx-stack&gt; .mjx-sup {
+ display: block
+ }
+
+
+        .mjx-stack&gt; .mjx-sub {
+ display: block
+ }
+
+
+        .mjx-prestack&gt; .mjx-presup {
+ display: block
+ }
+
+
+        .mjx-prestack&gt; .mjx-presub {
+ display: block
+ }
+
+
+        .mjx-delim-h&gt; .mjx-char {
+ display: inline-block
+ }
+
+
+        .mjx-surd {
+ vertical-align: top
+ }
+
+ .mjx-mphantom * {
+
+        visibility: hidden
+ }
+
+ .mjx-merror {
+
+        background-color: #FFFF88;
+ color: #CC0000;
+ border: 1px solid
+        #CC0000;
+ padding: 2px 3px;
+ font-style: normal;
+
+        font-size: 90%
+ }
+
+ .mjx-annotation-xml {
+ line-height:
+        normal
+ }
+
+ .mjx-menclose&gt; svg {
+ fill: none;
+
+        stroke: currentColor
+ }
+
+ .mjx-mtr {
+ display:
+        table-row
+ }
+
+ .mjx-mlabeledtr {
+ display: table-row
+
+        }
+
+ .mjx-mtd {
+ display: table-cell;
+ text-align:
+        center
+ }
+
+ .mjx-label {
+ display: table-row
+ }
+
+
+        .mjx-box {
+ display: inline-block
+ }
+
+ .mjx-block {
+
+        display: block
+ }
+
+ .mjx-span {
+ display: inline
+ }
+
+
+        .mjx-char {
+ display: block;
+&lt;!-- white-space: pre--&gt;&lt;!--
+        Remove this because it keeps white spaces in exported SVGs, which makes
+        the texts very long --&gt;
+ }
+
+ .mjx-itable {
+ display:
+        inline-table;
+ width: auto
+ }
+
+ .mjx-row {
+
+        display: table-row
+ }
+
+ .mjx-cell {
+ display:
+        table-cell
+ }
+
+ .mjx-table {
+ display: table;
+
+        width: 100%
+ }
+
+ .mjx-line {
+ display: block;
+
+        height: 0
+ }
+
+ .mjx-strut {
+ width: 0;
+
+        padding-top: 1em
+ }
+
+ .mjx-vsize {
+ width: 0
+ }
+
+
+        .MJXc-space1 {
+ margin-left: .167em
+ }
+
+ .MJXc-space2 {
+
+        margin-left: .222em
+ }
+
+ .MJXc-space3 {
+ margin-left:
+        .278em
+ }
+
+ .mjx-chartest {
+ display: block;
+
+        visibility: hidden;
+ position: absolute;
+ top: 0;
+
+        line-height: normal;
+ font-size: 500%
+ }
+
+
+        .mjx-chartest .mjx-char {
+ display: inline
+ }
+
+
+        .mjx-chartest .mjx-box {
+ padding-top: 1000px
+ }
+
+
+        .MJXc-processing {
+ visibility: hidden;
+ position: fixed;
+
+        width: 0;
+ height: 0;
+ overflow: hidden
+ }
+
+
+        .MJXc-processed {
+ display: none
+ }
+
+ .mjx-test {
+
+        font-style: normal;
+ font-weight: normal;
+ font-size: 100%;
+
+        font-size-adjust: none;
+ text-indent: 0;
+ text-transform: none;
+
+        letter-spacing: normal;
+ word-spacing: normal;
+ overflow:
+        hidden;
+ height: 1px
+ }
+
+ .mjx-test.mjx-test-display {
+
+        display: table !important
+ }
+
+ .mjx-test.mjx-test-inline {
+
+        display: inline !important;
+ margin-right: -1px
+ }
+
+
+        .mjx-test.mjx-test-default {
+ display: block !important;
+
+        clear: both
+ }
+
+ .mjx-ex-box {
+ display: inline-block
+        !important;
+ position: absolute;
+ overflow: hidden;
+
+        min-height: 0;
+ max-height: none;
+ padding: 0;
+ border: 0;
+
+        margin: 0;
+ width: 1px;
+ height: 60ex
+ }
+
+
+        .mjx-test-inline .mjx-left-box {
+ display: inline-block;
+
+        width: 0;
+ float: left
+ }
+
+ .mjx-test-inline
+        .mjx-right-box {
+ display: inline-block;
+ width: 0;
+ float:
+        right
+ }
+
+ .mjx-test-display .mjx-right-box {
+ display:
+        table-cell !important;
+ width: 10000em !important;
+ min-width:
+        0;
+ max-width: none;
+ padding: 0;
+ border: 0;
+ margin:
+        0
+ }
+
+ #MathJax_CHTML_Tooltip {
+ background-color:
+        InfoBackground;
+ color: InfoText;
+ border: 1px solid black;
+
+        box-shadow: 2px 2px 5px #AAAAAA;
+ -webkit-box-shadow: 2px 2px 5px
+        #AAAAAA;
+ -moz-box-shadow: 2px 2px 5px #AAAAAA;
+
+        -khtml-box-shadow: 2px 2px 5px #AAAAAA;
+ padding: 3px 4px;
+
+        z-index: 401;
+ position: absolute;
+ left: 0;
+ top: 0;
+
+        width: auto;
+ height: auto;
+ display: none
+ }
+
+
+        .mjx-chtml .mjx-noError {
+ line-height: 1.2;
+ vertical-align: ;
+
+        font-size: 90%;
+ text-align: left;
+ color: black;
+ padding:
+        1px 3px;
+ border: 1px solid
+ }
+
+ .MJXc-TeX-unknown-R {
+
+        font-family: STIXGeneral, 'Cambria Math', 'Arial Unicode MS',
+        serif;
+ font-style: normal;
+ font-weight: normal
+ }
+
+
+        .MJXc-TeX-unknown-I {
+ font-family: STIXGeneral, 'Cambria Math',
+        'Arial Unicode MS', serif;
+ font-style: italic;
+
+        font-weight: normal
+ }
+
+ .MJXc-TeX-unknown-B {
+
+        font-family: STIXGeneral, 'Cambria Math', 'Arial Unicode MS',
+        serif;
+ font-style: normal;
+ font-weight: bold
+ }
+
+
+        .MJXc-TeX-unknown-BI {
+ font-family: STIXGeneral, 'Cambria Math',
+        'Arial Unicode MS', serif;
+ font-style: italic;
+
+        font-weight: bold
+ }
+
+ .MJXc-TeX-ams-R {
+ font-family:
+        MJXc-TeX-ams-R, MJXc-TeX-ams-Rw
+ }
+
+ .MJXc-TeX-cal-B {
+
+        font-family: MJXc-TeX-cal-B, MJXc-TeX-cal-Bx, MJXc-TeX-cal-Bw
+ }
+
+
+        .MJXc-TeX-frak-R {
+ font-family: MJXc-TeX-frak-R, MJXc-TeX-frak-Rw
+
+        }
+
+ .MJXc-TeX-frak-B {
+ font-family: MJXc-TeX-frak-B,
+        MJXc-TeX-frak-Bx, MJXc-TeX-frak-Bw
+ }
+
+ .MJXc-TeX-math-BI {
+
+        font-family: MJXc-TeX-math-BI, MJXc-TeX-math-BIx, MJXc-TeX-math-BIw
+
+        }
+
+ .MJXc-TeX-sans-R {
+ font-family: MJXc-TeX-sans-R,
+        MJXc-TeX-sans-Rw
+ }
+
+ .MJXc-TeX-sans-B {
+ font-family:
+        MJXc-TeX-sans-B, MJXc-TeX-sans-Bx, MJXc-TeX-sans-Bw
+ }
+
+
+        .MJXc-TeX-sans-I {
+ font-family: MJXc-TeX-sans-I, MJXc-TeX-sans-Ix,
+        MJXc-TeX-sans-Iw
+ }
+
+ .MJXc-TeX-script-R {
+
+        font-family: MJXc-TeX-script-R, MJXc-TeX-script-Rw
+ }
+
+
+        .MJXc-TeX-type-R {
+ font-family: MJXc-TeX-type-R, MJXc-TeX-type-Rw
+
+        }
+
+ .MJXc-TeX-cal-R {
+ font-family: MJXc-TeX-cal-R,
+        MJXc-TeX-cal-Rw
+ }
+
+ .MJXc-TeX-main-B {
+ font-family:
+        MJXc-TeX-main-B, MJXc-TeX-main-Bx, MJXc-TeX-main-Bw
+ }
+
+
+        .MJXc-TeX-main-I {
+ font-family: MJXc-TeX-main-I, MJXc-TeX-main-Ix,
+        MJXc-TeX-main-Iw
+ }
+
+ .MJXc-TeX-main-R {
+ font-family:
+        MJXc-TeX-main-R, MJXc-TeX-main-Rw
+ }
+
+ .MJXc-TeX-math-I {
+
+        font-family: MJXc-TeX-math-I, MJXc-TeX-math-Ix, MJXc-TeX-math-Iw
+ }
+
+
+        .MJXc-TeX-size1-R {
+ font-family: MJXc-TeX-size1-R,
+        MJXc-TeX-size1-Rw
+ }
+
+ .MJXc-TeX-size2-R {
+
+        font-family: MJXc-TeX-size2-R, MJXc-TeX-size2-Rw
+ }
+
+
+        .MJXc-TeX-size3-R {
+ font-family: MJXc-TeX-size3-R,
+        MJXc-TeX-size3-Rw
+ }
+
+ .MJXc-TeX-size4-R {
+
+        font-family: MJXc-TeX-size4-R, MJXc-TeX-size4-Rw
+ }
+
+
+        .MJXc-TeX-vec-R {
+ font-family: MJXc-TeX-vec-R, MJXc-TeX-vec-Rw
+
+        }
+
+ .MJXc-TeX-vec-B {
+ font-family: MJXc-TeX-vec-B,
+        MJXc-TeX-vec-Bx, MJXc-TeX-vec-Bw
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-ams-R;
+ src: local('MathJax_AMS'),
+        local('MathJax_AMS-Regular')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-ams-Rw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_AMS-Regular.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-cal-B;
+ src: local('MathJax_Caligraphic
+        Bold'), local('MathJax_Caligraphic-Bold')
+ }
+
+
+        @font-face {
+ font-family: MJXc-TeX-cal-Bx;
+ src: local('MathJax_Caligraphic');
+
+        font-weight: bold
+ }
+
+ @font-face {
+ font-family:
+        MJXc-TeX-cal-Bw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Bold.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Bold.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-frak-R;
+ src: local('MathJax_Fraktur'),
+        local('MathJax_Fraktur-Regular')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-frak-Rw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Regular.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Regular.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-frak-B;
+ src: local('MathJax_Fraktur Bold'),
+        local('MathJax_Fraktur-Bold')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-frak-Bx;
+ src: local('MathJax_Fraktur');
+
+        font-weight: bold
+ }
+
+ @font-face {
+ font-family:
+        MJXc-TeX-frak-Bw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Bold.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Bold.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-math-BI;
+ src: local('MathJax_Math
+        BoldItalic'), local('MathJax_Math-BoldItalic')
+ }
+
+
+        @font-face {
+ font-family: MJXc-TeX-math-BIx;
+ src: local('MathJax_Math');
+
+        font-weight: bold;
+ font-style: italic
+ }
+
+ @font-face
+        {
+ font-family: MJXc-TeX-math-BIw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Math-BoldItalic.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-BoldItalic.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Math-BoldItalic.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-sans-R;
+ src: local('MathJax_SansSerif'),
+        local('MathJax_SansSerif-Regular')
+ }
+
+ @font-face
+        {
+ font-family: MJXc-TeX-sans-Rw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Regular.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Regular.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Regular.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-sans-B;
+ src: local('MathJax_SansSerif
+        Bold'), local('MathJax_SansSerif-Bold')
+ }
+
+
+        @font-face {
+ font-family: MJXc-TeX-sans-Bx;
+ src: local('MathJax_SansSerif');
+
+        font-weight: bold
+ }
+
+ @font-face {
+ font-family:
+        MJXc-TeX-sans-Bw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Bold.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Bold.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Bold.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-sans-I;
+ src: local('MathJax_SansSerif
+        Italic'), local('MathJax_SansSerif-Italic')
+ }
+
+
+        @font-face {
+ font-family: MJXc-TeX-sans-Ix;
+ src: local('MathJax_SansSerif');
+
+        font-style: italic
+ }
+
+ @font-face {
+ font-family:
+        MJXc-TeX-sans-Iw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Italic.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Italic.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Italic.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-script-R;
+ src: local('MathJax_Script'),
+        local('MathJax_Script-Regular')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-script-Rw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Script-Regular.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Script-Regular.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-type-R;
+ src: local('MathJax_Typewriter'),
+        local('MathJax_Typewriter-Regular')
+ }
+
+ @font-face
+        {
+ font-family: MJXc-TeX-type-Rw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Typewriter-Regular.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Typewriter-Regular.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Typewriter-Regular.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-cal-R;
+ src: local('MathJax_Caligraphic'),
+        local('MathJax_Caligraphic-Regular')
+ }
+
+
+        @font-face {
+ font-family: MJXc-TeX-cal-Rw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Regular.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-main-B;
+ src: local('MathJax_Main Bold'),
+        local('MathJax_Main-Bold')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-main-Bx;
+ src: local('MathJax_Main');
+
+        font-weight: bold
+ }
+
+ @font-face {
+ font-family:
+        MJXc-TeX-main-Bw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Main-Bold.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-main-I;
+ src: local('MathJax_Main Italic'),
+        local('MathJax_Main-Italic')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-main-Ix;
+ src: local('MathJax_Main');
+
+        font-style: italic
+ }
+
+ @font-face {
+ font-family:
+        MJXc-TeX-main-Iw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Main-Italic.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-main-R;
+ src: local('MathJax_Main'),
+        local('MathJax_Main-Regular')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-main-Rw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-math-I;
+ src: local('MathJax_Math Italic'),
+        local('MathJax_Math-Italic')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-math-Ix;
+ src: local('MathJax_Math');
+
+        font-style: italic
+ }
+
+ @font-face {
+ font-family:
+        MJXc-TeX-math-Iw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Math-Italic.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-size1-R;
+ src: local('MathJax_Size1'),
+        local('MathJax_Size1-Regular')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-size1-Rw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Size1-Regular.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-size2-R;
+ src: local('MathJax_Size2'),
+        local('MathJax_Size2-Regular')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-size2-Rw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Size2-Regular.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-size3-R;
+ src: local('MathJax_Size3'),
+        local('MathJax_Size3-Regular')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-size3-Rw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Size3-Regular.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-size4-R;
+ src: local('MathJax_Size4'),
+        local('MathJax_Size4-Regular')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-size4-Rw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-vec-R;
+ src: local('MathJax_Vector'),
+        local('MathJax_Vector-Regular')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-vec-Rw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Regular.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Regular.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Regular.otf')
+        format('opentype')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-vec-B;
+ src: local('MathJax_Vector Bold'),
+        local('MathJax_Vector-Bold')
+ }
+
+ @font-face {
+
+        font-family: MJXc-TeX-vec-Bx;
+ src: local('MathJax_Vector');
+
+        font-weight: bold
+ }
+
+ @font-face {
+ font-family:
+        MJXc-TeX-vec-Bw;
+ src /*1*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Bold.eot');
+
+        src /*2*/: url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Bold.woff')
+        format('woff'), url('https://www.digikey.com/schemeitcdn/static/js/library/MathJax-2.7.5/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Bold.otf')
+        format('opentype')
+ }
+
+    </style> <defs> <linearGradient x1="0%" y1="0%" x2="0%" y2="100%" id="mx-gradient-ffffff-1-ffffff-1-s-0"> <stop offset="0%" style="stop-color:#ffffff"/> <stop offset="100%" style="stop-color:#ffffff"/> </linearGradient> </defs> <g transform=" scale(1) translate(-276,-406)"> <rect x="489" y="489" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="489" y="509" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="489" y="529" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="489" y="549" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="629" y="569" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="629" y="539" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="629" y="499" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="489" y="469" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="489" y="569" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="510" y="450" width="100" height="140" fill="none" stroke="#000000" stroke-width="2" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"> <text x="517" y="493"> R </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 491 490 L 510 490" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"> <text x="517" y="513"> RE_N </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 491 510 L 510 510" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"> <text x="517" y="533"> DE </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 491 530 L 510 530" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"> <text x="517" y="553"> D </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 491 550 L 510 550" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" text-anchor="end" font-size="10px"> <text x="603" y="573"> GND </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 630 570 L 610 570" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" text-anchor="end" font-size="10px"> <text x="603" y="543"> A </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 630 540 L 610 540" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" text-anchor="end" font-size="10px"> <text x="603" y="503"> B </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 630 500 L 610 500" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"> <text x="517" y="473"> VCC </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 491 470 L 510 470" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"> <text x="517" y="573"> PAD </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 491 570 L 510 570" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <rect x="510" y="430" width="53" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="536.5" y="441.5"> RS485_1 </text> </g> <rect x="469" y="589" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 470 591 L 470 609" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 459 609.53 L 481 609.53 L 470 628.53 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="649" y="589" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 650 591 L 650 609" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 639 609.53 L 661 609.53 L 650 628.53 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="469" y="439" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" text-anchor="middle" font-size="12px"> <text x="469.69" y="415.86"> +5V </text> </g> <path d="M 470 421 L 470 439" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 460 420 L 480 420" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="419" y="459" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,420,490)" pointer-events="none"/> <rect x="419" y="519" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,420,490)" pointer-events="none"/> <path d="M 420 461 L 420 471" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,420,490)" pointer-events="none"/> <path d="M 420 509 L 420 519" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,420,490)" pointer-events="none"/> <path d="M 413 472 C 426.39 471.82 427 472 427 472 L 427 508 L 413 508 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,420,490)" pointer-events="none"/> <rect x="419" y="489" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,420,520)" pointer-events="none"/> <rect x="419" y="549" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,420,520)" pointer-events="none"/> <path d="M 420 491 L 420 501" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,420,520)" pointer-events="none"/> <path d="M 420 539 L 420 549" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,420,520)" pointer-events="none"/> <path d="M 413 502 C 426.39 501.82 427 502 427 502 L 427 538 L 413 538 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,420,520)" pointer-events="none"/> <rect x="419" y="519" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,420,550)" pointer-events="none"/> <rect x="419" y="579" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,420,550)" pointer-events="none"/> <path d="M 420 521 L 420 531" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,420,550)" pointer-events="none"/> <path d="M 420 569 L 420 579" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,420,550)" pointer-events="none"/> <path d="M 413 532 C 426.39 531.82 427 532 427 532 L 427 568 L 413 568 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,420,550)" pointer-events="none"/> <path d="M 450 490 L 490 490" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 490 510 L 480 510 L 480 530 L 490 530" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 450 520 L 478 520" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <ellipse cx="480" cy="520" rx="2" ry="2" fill="#000000" stroke="#000000" stroke-width="2" pointer-events="none"/> <path d="M 450 550 L 490 550" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 490 570 L 470 570 L 470 590" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 630 570 L 650 570 L 650 590" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 470 440 L 470 470 L 490 470" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <rect x="349" y="489" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 332 490 L 349 490" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 327.06 484.34 L 332.72 490 L 327.06 495.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="311" y="480" width="9" height="16" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="315.5" y="493"> R </text> </g> <path d="M 350 490 L 390 490" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <rect x="349" y="519" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 332 520 L 349 520" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 327.06 514.34 L 332.72 520 L 327.06 525.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="284" y="510" width="36" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="302" y="521.5"> DERE </text> </g> <rect x="349" y="549" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 332 550 L 349 550" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 327.06 544.34 L 332.72 550 L 327.06 555.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="311" y="540" width="9" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="315.5" y="551.5"> D </text> </g> <path d="M 350 520 L 390 520" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 390 550 L 350 550" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <rect x="689" y="459" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,690,490)" pointer-events="none"/> <rect x="689" y="519" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,690,490)" pointer-events="none"/> <path d="M 690 461 L 690 471" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,690,490)" pointer-events="none"/> <path d="M 690 509 L 690 519" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,690,490)" pointer-events="none"/> <path d="M 683 472 C 696.39 471.82 697 472 697 472 L 697 508 L 683 508 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,690,490)" pointer-events="none"/> <rect x="700" y="490" width="19" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="709.5" y="501.5"> 56R </text> </g> <rect x="689" y="519" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,690,550)" pointer-events="none"/> <rect x="689" y="579" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,690,550)" pointer-events="none"/> <path d="M 690 521 L 690 531" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,690,550)" pointer-events="none"/> <path d="M 690 569 L 690 579" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,690,550)" pointer-events="none"/> <path d="M 683 532 C 696.39 531.82 697 532 697 532 L 697 568 L 683 568 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,690,550)" pointer-events="none"/> <rect x="700" y="540" width="19" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="709.5" y="551.5"> 56R </text> </g> <path d="M 630 540 L 670 540 L 670 600 L 690 600 L 690 580" fill="none" stroke="#ff5656" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 630 500 L 670 500 L 670 430 L 690 430 L 690 460" fill="none" stroke="#005fbf" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <rect x="829" y="489" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,820,520)" pointer-events="none"/> <rect x="829" y="549" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,820,520)" pointer-events="none"/> <rect x="809" y="489" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,820,520)" pointer-events="none"/> <rect x="809" y="549" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 828.13 510 C 825.11 510.01 822.65 507.78 822.64 505.01 C 822.63 502.25 825.08 500.01 828.1 500 C 828.11 500 828.11 500 828.12 500" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 828 500 L 830 500" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 828 510 L 830 510" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 828.13 520 C 825.11 520.01 822.65 517.78 822.64 515.01 C 822.63 512.25 825.08 510.01 828.1 510 C 828.11 510 828.11 510 828.12 510" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 828 510 L 830 510" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 828 520 L 830 520" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 828.13 530 C 825.11 530.01 822.65 527.78 822.64 525.01 C 822.63 522.25 825.08 520.01 828.1 520 C 828.11 520 828.11 520 828.12 520" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 828 520 L 830 520" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 828 530 L 830 530" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 828.13 540 C 825.11 540.01 822.65 537.78 822.64 535.01 C 822.63 532.25 825.08 530.01 828.1 530 C 828.11 530 828.11 530 828.12 530" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 828 530 L 830 530" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 828 540 L 830 540" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 830 491 L 830 499" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 830 541 L 830 549" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 811.86 510 C 814.89 510.01 817.35 507.78 817.36 505.01 C 817.37 502.25 814.92 500.01 811.9 500 C 811.89 500 811.89 500 811.88 500" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 812 500 L 810 500" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 812 510 L 810 510" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 811.86 520 C 814.89 520.01 817.35 517.78 817.36 515.01 C 817.37 512.25 814.92 510.01 811.9 510 C 811.89 510 811.89 510 811.88 510" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 812 510 L 810 510" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 812 520 L 810 520" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 811.86 530 C 814.89 530.01 817.35 527.78 817.36 525.01 C 817.37 522.25 814.92 520.01 811.9 520 C 811.89 520 811.89 520 811.88 520" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 812 520 L 810 520" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 812 530 L 810 530" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 811.86 540 C 814.89 540.01 817.35 537.78 817.36 535.01 C 817.37 532.25 814.92 530.01 811.9 530 C 811.89 530 811.89 530 811.88 530" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 812 530 L 810 530" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 812 540 L 810 540" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 810 491 L 810 499" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <path d="M 810 541 L 810 549" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,820,520)" pointer-events="none"/> <rect x="790" y="490" width="61" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="820.5" y="501.5"> CM Choke </text> </g> <path d="M 790 510 L 780 510 L 780 430 L 692 430" fill="none" stroke="#005fbf" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <ellipse cx="690" cy="430" rx="2" ry="2" fill="#005fbf" stroke="#005fbf" stroke-width="2" pointer-events="none"/> <path d="M 790 530 L 780 530 L 780 600 L 692 600" fill="none" stroke="#ff5656" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <ellipse cx="690" cy="600" rx="2" ry="2" fill="#ff5656" stroke="#ff5656" stroke-width="2" pointer-events="none"/> <rect x="724" y="494" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,725,520)" pointer-events="none"/> <rect x="724" y="544" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,725,520)" pointer-events="none"/> <path d="M 714 516 C 736 516 736 516 736 516" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,725,520)" pointer-events="none"/> <path d="M 714 524 C 736 524 736 524 736 524" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,725,520)" pointer-events="none"/> <path d="M 725 496 L 725 515" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,725,520)" pointer-events="none"/> <path d="M 725 525 L 725 544" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,725,520)" pointer-events="none"/> <rect x="749" y="529" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 750 531 L 750 549" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 739 549.53 L 761 549.53 L 750 568.53 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 700 520 L 690 520" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 750 520 L 750 530" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <rect x="919" y="509" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,905,510)" pointer-events="none"/> <path d="M 902 510 L 919 510" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,905,510)" pointer-events="none"/> <path d="M 906.5 504.34 L 900.85 510 L 906.5 515.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,905,510)" pointer-events="none"/> <path d="M 900.5 504.34 L 894.85 510 L 900.5 515.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,905,510)" pointer-events="none"/> <rect x="920" y="500" width="32" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="936" y="511.5"> PIN 5 </text> </g> <rect x="700" y="430" width="69" height="16" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#005fbf" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="734.5" y="443"> RS485_1_N </text> </g> <rect x="919" y="529" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,905,530)" pointer-events="none"/> <path d="M 902 530 L 919 530" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,905,530)" pointer-events="none"/> <path d="M 906.5 524.34 L 900.85 530 L 906.5 535.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,905,530)" pointer-events="none"/> <path d="M 900.5 524.34 L 894.85 530 L 900.5 535.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,905,530)" pointer-events="none"/> <rect x="920" y="530" width="32" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="936" y="541.5"> PIN 6 </text> </g> <path d="M 850 510 L 890 510" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 890 530 L 850 530" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <rect x="489" y="729" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="489" y="749" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="489" y="769" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="489" y="789" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="629" y="809" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="629" y="779" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="629" y="739" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="489" y="709" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="489" y="809" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="510" y="690" width="100" height="140" fill="none" stroke="#000000" stroke-width="2" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"> <text x="517" y="733"> R </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 491 730 L 510 730" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"> <text x="517" y="753"> RE_N </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 491 750 L 510 750" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"> <text x="517" y="773"> DE </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 491 770 L 510 770" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"> <text x="517" y="793"> D </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 491 790 L 510 790" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" text-anchor="end" font-size="10px"> <text x="603" y="813"> GND </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 630 810 L 610 810" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" text-anchor="end" font-size="10px"> <text x="603" y="783"> A </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 630 780 L 610 780" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" text-anchor="end" font-size="10px"> <text x="603" y="743"> B </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 630 740 L 610 740" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"> <text x="517" y="713"> VCC </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 491 710 L 510 710" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"> <text x="517" y="813"> PAD </text> </g> <g fill="#000000" font-family="Arial,Helvetica" font-size="10px"/> <path d="M 491 810 L 510 810" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <rect x="510" y="670" width="53" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="536.5" y="681.5"> RS485_2 </text> </g> <rect x="469" y="829" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 470 831 L 470 849" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 459 849.53 L 481 849.53 L 470 868.53 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="649" y="829" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 650 831 L 650 849" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 639 849.53 L 661 849.53 L 650 868.53 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="469" y="679" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" text-anchor="middle" font-size="12px"> <text x="469.69" y="655.86"> +5V </text> </g> <path d="M 470 661 L 470 679" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 460 660 L 480 660" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="419" y="699" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,420,730)" pointer-events="none"/> <rect x="419" y="759" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,420,730)" pointer-events="none"/> <path d="M 420 701 L 420 711" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,420,730)" pointer-events="none"/> <path d="M 420 749 L 420 759" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,420,730)" pointer-events="none"/> <path d="M 413 712 C 426.39 711.82 427 712 427 712 L 427 748 L 413 748 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,420,730)" pointer-events="none"/> <rect x="419" y="729" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,420,760)" pointer-events="none"/> <rect x="419" y="789" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,420,760)" pointer-events="none"/> <path d="M 420 731 L 420 741" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,420,760)" pointer-events="none"/> <path d="M 420 779 L 420 789" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,420,760)" pointer-events="none"/> <path d="M 413 742 C 426.39 741.82 427 742 427 742 L 427 778 L 413 778 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,420,760)" pointer-events="none"/> <rect x="419" y="759" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,420,790)" pointer-events="none"/> <rect x="419" y="819" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,420,790)" pointer-events="none"/> <path d="M 420 761 L 420 771" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,420,790)" pointer-events="none"/> <path d="M 420 809 L 420 819" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,420,790)" pointer-events="none"/> <path d="M 413 772 C 426.39 771.82 427 772 427 772 L 427 808 L 413 808 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,420,790)" pointer-events="none"/> <path d="M 450 730 L 490 730" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 490 750 L 480 750 L 480 770 L 490 770" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 450 760 L 478 760" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <ellipse cx="480" cy="760" rx="2" ry="2" fill="#000000" stroke="#000000" stroke-width="2" pointer-events="none"/> <path d="M 450 790 L 490 790" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 490 810 L 470 810 L 470 830" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 630 810 L 650 810 L 650 830" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 470 680 L 470 710 L 490 710" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <rect x="349" y="729" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 332 730 L 349 730" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 327.06 724.34 L 332.72 730 L 327.06 735.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="311" y="720" width="7" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="314.5" y="731.5"> R </text> </g> <path d="M 350 730 L 390 730" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <rect x="349" y="759" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 332 760 L 349 760" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 327.06 754.34 L 332.72 760 L 327.06 765.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="284" y="750" width="26" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="297" y="761.5"> DERE </text> </g> <rect x="349" y="789" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 332 790 L 349 790" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 327.06 784.34 L 332.72 790 L 327.06 795.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="311" y="780" width="7" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="314.5" y="791.5"> D </text> </g> <path d="M 350 760 L 390 760" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 390 790 L 350 790" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <rect x="689" y="699" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,690,730)" pointer-events="none"/> <rect x="689" y="759" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,690,730)" pointer-events="none"/> <path d="M 690 701 L 690 711" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,690,730)" pointer-events="none"/> <path d="M 690 749 L 690 759" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,690,730)" pointer-events="none"/> <path d="M 683 712 C 696.39 711.82 697 712 697 712 L 697 748 L 683 748 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,690,730)" pointer-events="none"/> <rect x="700" y="730" width="19" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="709.5" y="741.5"> 56R </text> </g> <rect x="689" y="759" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,690,790)" pointer-events="none"/> <rect x="689" y="819" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,690,790)" pointer-events="none"/> <path d="M 690 761 L 690 771" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,690,790)" pointer-events="none"/> <path d="M 690 809 L 690 819" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,690,790)" pointer-events="none"/> <path d="M 683 772 C 696.39 771.82 697 772 697 772 L 697 808 L 683 808 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,690,790)" pointer-events="none"/> <rect x="700" y="780" width="19" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="709.5" y="791.5"> 56R </text> </g> <path d="M 630 780 L 670 780 L 670 840 L 690 840 L 690 820" fill="none" stroke="#ff5656" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 630 740 L 670 740 L 670 670 L 690 670 L 690 700" fill="none" stroke="#005fbf" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <rect x="829" y="729" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,820,760)" pointer-events="none"/> <rect x="829" y="789" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,820,760)" pointer-events="none"/> <rect x="809" y="729" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,820,760)" pointer-events="none"/> <rect x="809" y="789" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 828.13 750 C 825.11 750.01 822.65 747.78 822.64 745.01 C 822.63 742.25 825.08 740.01 828.1 740 C 828.11 740 828.11 740 828.12 740" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 828 740 L 830 740" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 828 750 L 830 750" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 828.13 760 C 825.11 760.01 822.65 757.78 822.64 755.01 C 822.63 752.25 825.08 750.01 828.1 750 C 828.11 750 828.11 750 828.12 750" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 828 750 L 830 750" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 828 760 L 830 760" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 828.13 770 C 825.11 770.01 822.65 767.78 822.64 765.01 C 822.63 762.25 825.08 760.01 828.1 760 C 828.11 760 828.11 760 828.12 760" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 828 760 L 830 760" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 828 770 L 830 770" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 828.13 780 C 825.11 780.01 822.65 777.78 822.64 775.01 C 822.63 772.25 825.08 770.01 828.1 770 C 828.11 770 828.11 770 828.12 770" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 828 770 L 830 770" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 828 780 L 830 780" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 830 731 L 830 739" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 830 781 L 830 789" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 811.86 750 C 814.89 750.01 817.35 747.78 817.36 745.01 C 817.37 742.25 814.92 740.01 811.9 740 C 811.89 740 811.89 740 811.88 740" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 812 740 L 810 740" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 812 750 L 810 750" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 811.86 760 C 814.89 760.01 817.35 757.78 817.36 755.01 C 817.37 752.25 814.92 750.01 811.9 750 C 811.89 750 811.89 750 811.88 750" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 812 750 L 810 750" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 812 760 L 810 760" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 811.86 770 C 814.89 770.01 817.35 767.78 817.36 765.01 C 817.37 762.25 814.92 760.01 811.9 760 C 811.89 760 811.89 760 811.88 760" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 812 760 L 810 760" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 812 770 L 810 770" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 811.86 780 C 814.89 780.01 817.35 777.78 817.36 775.01 C 817.37 772.25 814.92 770.01 811.9 770 C 811.89 770 811.89 770 811.88 770" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 812 770 L 810 770" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 812 780 L 810 780" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 810 731 L 810 739" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <path d="M 810 781 L 810 789" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,820,760)" pointer-events="none"/> <rect x="790" y="730" width="48" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="814" y="741.5"> CM Choke </text> </g> <path d="M 790 750 L 780 750 L 780 670 L 692 670" fill="none" stroke="#005fbf" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <ellipse cx="690" cy="670" rx="2" ry="2" fill="#005fbf" stroke="#005fbf" stroke-width="2" pointer-events="none"/> <path d="M 790 770 L 780 770 L 780 840 L 692 840" fill="none" stroke="#ff5656" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <ellipse cx="690" cy="840" rx="2" ry="2" fill="#ff5656" stroke="#ff5656" stroke-width="2" pointer-events="none"/> <rect x="724" y="734" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,725,760)" pointer-events="none"/> <rect x="724" y="784" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,725,760)" pointer-events="none"/> <path d="M 714 756 C 736 756 736 756 736 756" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,725,760)" pointer-events="none"/> <path d="M 714 764 C 736 764 736 764 736 764" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,725,760)" pointer-events="none"/> <path d="M 725 736 L 725 755" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,725,760)" pointer-events="none"/> <path d="M 725 765 L 725 784" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,725,760)" pointer-events="none"/> <rect x="749" y="769" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 750 771 L 750 789" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 739 789.53 L 761 789.53 L 750 808.53 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 700 760 L 690 760" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 750 760 L 750 770" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <rect x="919" y="749" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,905,750)" pointer-events="none"/> <path d="M 902 750 L 919 750" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,905,750)" pointer-events="none"/> <path d="M 906.5 744.34 L 900.85 750 L 906.5 755.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,905,750)" pointer-events="none"/> <path d="M 900.5 744.34 L 894.85 750 L 900.5 755.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,905,750)" pointer-events="none"/> <rect x="920" y="730" width="32" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="936" y="741.5"> PIN 3 </text> </g> <rect x="919" y="769" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,905,770)" pointer-events="none"/> <path d="M 902 770 L 919 770" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,905,770)" pointer-events="none"/> <path d="M 906.5 764.34 L 900.85 770 L 906.5 775.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,905,770)" pointer-events="none"/> <path d="M 900.5 764.34 L 894.85 770 L 900.5 775.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,905,770)" pointer-events="none"/> <rect x="920" y="770" width="32" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="936" y="781.5"> PIN 4 </text> </g> <path d="M 850 750 L 890 750" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 890 770 L 850 770" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <rect x="700" y="670" width="76" height="16" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#005fbf" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="738" y="683"> RS_485_2_N </text> </g> <rect x="700" y="580" width="69" height="16" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#ff5656" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="734.5" y="593"> RS485_1_P </text> </g> <rect x="710" y="820" width="56" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#ff5656" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="738" y="831.5"> RS485_2_P </text> </g> <rect x="1149" y="779" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="1149" y="739" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="1099" y="779" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <rect x="1099" y="739" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 1135.64 750 C 1132.61 750.01 1130.15 747.78 1130.14 745.01 C 1130.13 742.25 1132.58 740.01 1135.6 740 C 1135.61 740 1135.61 740 1135.62 740" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1135.5 740 L 1137.5 740" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1135.5 750 L 1137.5 750" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1135.64 760 C 1132.61 760.01 1130.15 757.78 1130.14 755.01 C 1130.13 752.25 1132.58 750.01 1135.6 750 C 1135.61 750 1135.61 750 1135.62 750" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1135.5 750 L 1137.5 750" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1135.5 760 L 1137.5 760" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1135.64 770 C 1132.61 770.01 1130.15 767.78 1130.14 765.01 C 1130.13 762.25 1132.58 760.01 1135.6 760 C 1135.61 760 1135.61 760 1135.62 760" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1135.5 760 L 1137.5 760" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1135.5 770 L 1137.5 770" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1135.64 780 C 1132.61 780.01 1130.15 777.78 1130.14 775.01 C 1130.13 772.25 1132.58 770.01 1135.6 770 C 1135.61 770 1135.61 770 1135.62 770" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1135.5 770 L 1137.5 770" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1135.5 780 L 1137.5 780" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1126.5 740 L 1126.5 780" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1123.5 740 L 1123.5 780" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1138.5 780 L 1149 780" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1138.5 740 L 1149 740" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1114.36 750 C 1117.39 750.01 1119.85 747.78 1119.86 745.01 C 1119.87 742.25 1117.42 740.01 1114.4 740 C 1114.39 740 1114.39 740 1114.38 740" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1114.5 740 L 1112.5 740" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1114.5 750 L 1112.5 750" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1114.36 760 C 1117.39 760.01 1119.85 757.78 1119.86 755.01 C 1119.87 752.25 1117.42 750.01 1114.4 750 C 1114.39 750 1114.39 750 1114.38 750" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1114.5 750 L 1112.5 750" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1114.5 760 L 1112.5 760" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1114.36 770 C 1117.39 770.01 1119.85 767.78 1119.86 765.01 C 1119.87 762.25 1117.42 760.01 1114.4 760 C 1114.39 760 1114.39 760 1114.38 760" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1114.5 760 L 1112.5 760" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1114.5 770 L 1112.5 770" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1114.36 780 C 1117.39 780.01 1119.85 777.78 1119.86 775.01 C 1119.87 772.25 1117.42 770.01 1114.4 770 C 1114.39 770 1114.39 770 1114.38 770" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1114.5 770 L 1112.5 770" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1114.5 780 L 1112.5 780" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1101 780 L 1111.5 780" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1101 740 L 1111.5 740" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <ellipse cx="1135.5" cy="745" rx="1" ry="1" fill="transparent" stroke="#000000" stroke-width="2" pointer-events="none"/> <ellipse cx="1114.5" cy="745" rx="1" ry="1" fill="transparent" stroke="#000000" stroke-width="2" pointer-events="none"/> <rect x="1229" y="669" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,1225,700)" pointer-events="none"/> <rect x="1229" y="729" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1228.14 690 C 1225.11 690.01 1222.65 687.78 1222.64 685.01 C 1222.63 682.25 1225.08 680.01 1228.1 680 C 1228.11 680 1228.11 680 1228.12 680" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1228 680 L 1230 680" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1228 690 L 1230 690" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1228.14 700 C 1225.11 700.01 1222.65 697.78 1222.64 695.01 C 1222.63 692.25 1225.08 690.01 1228.1 690 C 1228.11 690 1228.11 690 1228.12 690" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1228 690 L 1230 690" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1228 700 L 1230 700" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1228.14 710 C 1225.11 710.01 1222.65 707.78 1222.64 705.01 C 1222.63 702.25 1225.08 700.01 1228.1 700 C 1228.11 700 1228.11 700 1228.12 700" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1228 700 L 1230 700" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1228 710 L 1230 710" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1228.14 720 C 1225.11 720.01 1222.65 717.78 1222.64 715.01 C 1222.63 712.25 1225.08 710.01 1228.1 710 C 1228.11 710 1228.11 710 1228.12 710" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1228 710 L 1230 710" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1228 720 L 1230 720" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1230 671 L 1230 679" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1230 721 L 1230 729" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1219 680 L 1219 720" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <path d="M 1216 680 L 1216 720" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,700)" pointer-events="none"/> <rect x="1229" y="789" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,1225,820)" pointer-events="none"/> <rect x="1229" y="849" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1228.14 810 C 1225.11 810.01 1222.65 807.78 1222.64 805.01 C 1222.63 802.25 1225.08 800.01 1228.1 800 C 1228.11 800 1228.11 800 1228.12 800" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1228 800 L 1230 800" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1228 810 L 1230 810" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1228.14 820 C 1225.11 820.01 1222.65 817.78 1222.64 815.01 C 1222.63 812.25 1225.08 810.01 1228.1 810 C 1228.11 810 1228.11 810 1228.12 810" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1228 810 L 1230 810" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1228 820 L 1230 820" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1228.14 830 C 1225.11 830.01 1222.65 827.78 1222.64 825.01 C 1222.63 822.25 1225.08 820.01 1228.1 820 C 1228.11 820 1228.11 820 1228.12 820" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1228 820 L 1230 820" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1228 830 L 1230 830" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1228.14 840 C 1225.11 840.01 1222.65 837.78 1222.64 835.01 C 1222.63 832.25 1225.08 830.01 1228.1 830 C 1228.11 830 1228.11 830 1228.12 830" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1228 830 L 1230 830" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1228 840 L 1230 840" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1230 791 L 1230 799" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1230 841 L 1230 849" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1219 800 L 1219 840" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <path d="M 1216 800 L 1216 840" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(180,1225,820)" pointer-events="none"/> <rect x="1184" y="714" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,1185,740)" pointer-events="none"/> <rect x="1184" y="764" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,1185,740)" pointer-events="none"/> <path d="M 1174 736 C 1196 736 1196 736 1196 736" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,1185,740)" pointer-events="none"/> <path d="M 1174 744 C 1196 744 1196 744 1196 744" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,1185,740)" pointer-events="none"/> <path d="M 1185 716 L 1185 735" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,1185,740)" pointer-events="none"/> <path d="M 1185 745 L 1185 764" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,1185,740)" pointer-events="none"/> <rect x="1184" y="754" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,1185,780)" pointer-events="none"/> <rect x="1184" y="804" width="2" height="2" fill="#000000" stroke="none" transform="rotate(90,1185,780)" pointer-events="none"/> <path d="M 1174 776 C 1196 776 1196 776 1196 776" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,1185,780)" pointer-events="none"/> <path d="M 1174 784 C 1196 784 1196 784 1196 784" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" transform="rotate(90,1185,780)" pointer-events="none"/> <path d="M 1185 756 L 1185 775" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,1185,780)" pointer-events="none"/> <path d="M 1185 785 L 1185 804" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,1185,780)" pointer-events="none"/> <path d="M 1150 780 L 1160 780" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1150 740 L 1160 740" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1210 740 L 1220 740 L 1220 730" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1210 780 L 1220 780 L 1220 790" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <rect x="1219" y="849" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 1220 851 L 1220 869" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1209 869.53 L 1231 869.53 L 1220 888.53 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="1219" y="669" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" text-anchor="middle" font-size="12px"> <text x="1219.69" y="645.86"> Vcc </text> </g> <path d="M 1220 651 L 1220 669" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1210 650 L 1230 650" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="1039" y="739" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 1022 740 L 1039 740" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1026.5 734.34 L 1020.85 740 L 1026.5 745.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1020.5 734.34 L 1014.85 740 L 1020.5 745.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="978" y="730" width="32" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="994" y="741.5"> PIN 2 </text> </g> <rect x="1039" y="779" width="2" height="2" fill="#000000" stroke="none" pointer-events="none"/> <path d="M 1022 780 L 1039 780" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1026.5 774.34 L 1020.85 780 L 1026.5 785.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1020.5 774.34 L 1014.85 780 L 1020.5 785.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" pointer-events="none"/> <rect x="978" y="770" width="32" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="994" y="781.5"> PIN 1 </text> </g> <path d="M 1040 740 L 1100 740" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <path d="M 1040 780 L 1100 780" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <rect x="1329" y="739" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,1315,740)" pointer-events="none"/> <path d="M 1312 740 L 1329 740" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,1315,740)" pointer-events="none"/> <path d="M 1316.5 734.34 L 1310.85 740 L 1316.5 745.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,1315,740)" pointer-events="none"/> <path d="M 1310.5 734.34 L 1304.85 740 L 1310.5 745.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,1315,740)" pointer-events="none"/> <rect x="1310" y="720" width="69" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="1344.5" y="731.5"> PIN 8 DSL+ </text> </g> <rect x="1329" y="779" width="2" height="2" fill="#000000" stroke="none" transform="rotate(180,1315,780)" pointer-events="none"/> <path d="M 1312 780 L 1329 780" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,1315,780)" pointer-events="none"/> <path d="M 1316.5 774.34 L 1310.85 780 L 1316.5 785.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,1315,780)" pointer-events="none"/> <path d="M 1310.5 774.34 L 1304.85 780 L 1310.5 785.66" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(180,1315,780)" pointer-events="none"/> <rect x="1310" y="790" width="65" height="13" fill-opacity="0" fill="#dae2f2" stroke="none" pointer-events="none"/> <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold" text-anchor="middle" font-size="12px"> <text x="1342.5" y="801.5"> PIN 7 DSL- </text> </g> <path d="M 1300 740 L 1222 740" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <ellipse cx="1220" cy="740" rx="2" ry="2" fill="#000000" stroke="#000000" stroke-width="2" pointer-events="none"/> <path d="M 1300 780 L 1222 780" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/> <ellipse cx="1220" cy="780" rx="2" ry="2" fill="#000000" stroke="#000000" stroke-width="2" pointer-events="none"/> <g fill="#000" font-family="Arial,Helvetica" font-weight="bold" font-size="12px"> <text x="932" y="836"> DSL enable. </text> <text x="932" y="850"> Tie 1-3 and 2-4 </text> <text x="932" y="864"> together. </text> </g> <path d="M 955.71 820 L 955.71 801.85 L 950 801.85 L 960 790 L 970 801.85 L 964.29 801.85 L 964.29 820 Z" fill="url(#mx-gradient-ffffff-1-ffffff-1-s-0)" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/> </g> 
+            <style type="text/css"><![CDATA[
+                @font-face {
+                    font-family: 'EmbeddedTitilliumWeb';  # Unique font family name
+                    font-style: normal;
+                    font-weight: normal;
+                    src: url(data:font/woff;base64,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) format('woff');
+                }
+            ]]></style>
+            </svg>

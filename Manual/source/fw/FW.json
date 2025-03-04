@@ -1,0 +1,254 @@
+[
+  {
+    "controlHW": "4",
+    "NoAxis": "S",
+    "Comm": "EtherCAT",
+    "FB": "HiperfaceDSL",
+    "FW": "4_S_EtherCAT_HiperfaceDSL"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "S",
+    "Comm": "EtherCAT",
+    "FB": "Endat2_2",
+    "FW": "4_S_EtherCAT_Endat2_2"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "S",
+    "Comm": "EtherCAT",
+    "FB": "BissC_SSI",
+    "FW": "4_S_EtherCAT_BissC_SSI"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "S",
+    "Comm": "Profinet",
+    "FB": "HiperfaceDSL",
+    "FW": "4_S_Profinet_HiperfaceDSL"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "S",
+    "Comm": "Profinet",
+    "FB": "Endat2_2",
+    "FW": "4_S_Profinet_Endat2_2"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "S",
+    "Comm": "Profinet",
+    "FB": "BissC_SSI",
+    "FW": "4_S_Profinet_BissC_SSI"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "S",
+    "Comm": "CoEcanopen",
+    "FB": "HiperfaceDSL",
+    "FW": "4_S_CoEcanopen_HiperfaceDSL"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "S",
+    "Comm": "CoEcanopen",
+    "FB": "Endat2_2",
+    "FW": "4_S_CoEcanopen_Endat2_2"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "S",
+    "Comm": "CoEcanopen",
+    "FB": "BissC_SSI",
+    "FW": "4_S_CoEcanopen_BissC_SSI"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "D",
+    "Comm": "EtherCAT",
+    "FB": "HiperfaceDSL",
+    "FW": "4_D_EtherCAT_HiperfaceDSL"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "D",
+    "Comm": "EtherCAT",
+    "FB": "Endat2_2",
+    "FW": "4_D_EtherCAT_Endat2_2"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "D",
+    "Comm": "EtherCAT",
+    "FB": "BissC_SSI",
+    "FW": "4_D_EtherCAT_BissC_SSI"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "D",
+    "Comm": "Profinet",
+    "FB": "HiperfaceDSL",
+    "FW": "4_D_Profinet_HiperfaceDSL"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "D",
+    "Comm": "Profinet",
+    "FB": "Endat2_2",
+    "FW": "4_D_Profinet_Endat2_2"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "D",
+    "Comm": "Profinet",
+    "FB": "BissC_SSI",
+    "FW": "4_D_Profinet_BissC_SSI"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "D",
+    "Comm": "CoEcanopen",
+    "FB": "HiperfaceDSL",
+    "FW": "4_D_CoEcanopen_HiperfaceDSL"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "D",
+    "Comm": "CoEcanopen",
+    "FB": "Endat2_2",
+    "FW": "4_D_CoEcanopen_Endat2_2"
+  },
+  {
+    "controlHW": "4",
+    "NoAxis": "D",
+    "Comm": "CoEcanopen",
+    "FB": "BissC_SSI",
+    "FW": "4_D_CoEcanopen_BissC_SSI"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "S",
+    "Comm": "EtherCAT",
+    "FB": "HiperfaceDSL",
+    "FW": "5_S_EtherCAT_HiperfaceDSL"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "S",
+    "Comm": "EtherCAT",
+    "FB": "Endat2_2",
+    "FW": "5_S_EtherCAT_Endat2_2"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "S",
+    "Comm": "EtherCAT",
+    "FB": "BissC_SSI",
+    "FW": "5_S_EtherCAT_BissC_SSI"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "S",
+    "Comm": "Profinet",
+    "FB": "HiperfaceDSL",
+    "FW": "5_S_Profinet_HiperfaceDSL"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "S",
+    "Comm": "Profinet",
+    "FB": "Endat2_2",
+    "FW": "5_S_Profinet_Endat2_2"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "S",
+    "Comm": "Profinet",
+    "FB": "BissC_SSI",
+    "FW": "5_S_Profinet_BissC_SSI"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "S",
+    "Comm": "CoEcanopen",
+    "FB": "HiperfaceDSL",
+    "FW": "5_S_CoEcanopen_HiperfaceDSL"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "S",
+    "Comm": "CoEcanopen",
+    "FB": "Endat2_2",
+    "FW": "5_S_CoEcanopen_Endat2_2"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "S",
+    "Comm": "CoEcanopen",
+    "FB": "BissC_SSI",
+    "FW": "5_S_CoEcanopen_BissC_SSI"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "D",
+    "Comm": "EtherCAT",
+    "FB": "HiperfaceDSL",
+    "FW": "5_D_EtherCAT_HiperfaceDSL"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "D",
+    "Comm": "EtherCAT",
+    "FB": "Endat2_2",
+    "FW": "5_D_EtherCAT_Endat2_2"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "D",
+    "Comm": "EtherCAT",
+    "FB": "BissC_SSI",
+    "FW": "5_D_EtherCAT_BissC_SSI"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "D",
+    "Comm": "Profinet",
+    "FB": "HiperfaceDSL",
+    "FW": "5_D_Profinet_HiperfaceDSL"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "D",
+    "Comm": "Profinet",
+    "FB": "Endat2_2",
+    "FW": "5_D_Profinet_Endat2_2"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "D",
+    "Comm": "Profinet",
+    "FB": "BissC_SSI",
+    "FW": "5_D_Profinet_BissC_SSI"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "D",
+    "Comm": "CoEcanopen",
+    "FB": "HiperfaceDSL",
+    "FW": "5_D_CoEcanopen_HiperfaceDSL"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "D",
+    "Comm": "CoEcanopen",
+    "FB": "Endat2_2",
+    "FW": "5_D_CoEcanopen_Endat2_2"
+  },
+  {
+    "controlHW": "5",
+    "NoAxis": "D",
+    "Comm": "CoEcanopen",
+    "FB": "BissC_SSI",
+    "FW": "5_D_CoEcanopen_BissC_SSI"
+  }
+]

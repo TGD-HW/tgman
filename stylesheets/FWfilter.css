@@ -1,0 +1,11 @@
+#filter-controls {
+  margin-bottom: 20px;
+}
+
+#filter-controls select {
+  margin-right: 10px;
+}
+
+#firmware-list div {
+  margin-bottom: 15px;
+}
